@@ -1,0 +1,35 @@
+@@include('blocks/header.html')
+
+<section class="pb-24 relative bg-blue-500 overflow-hidden">
+    <div class="container mt-48">
+        <div class="flex flex-wrap gap-3">
+            <button class="white-button open-modal" data-modal="vacancy">
+                Vacancy
+            </button>
+            <button class="white-button open-modal" data-modal="contact">
+                Contact
+            </button>
+            <button class="white-button open-modal" data-modal="messenger">
+                Messenger
+            </button>
+            <button class="white-button open-modal" data-modal="special">
+                Special
+            </button>
+            <button class="white-button open-modal" data-modal="calendar">
+                Calendar
+            </button>
+        </div>
+    </div>
+</section>
+
+@@include('blocks/modals/contact.html')
+
+@@include('blocks/modals/messenger.html')
+
+@@include('blocks/modals/vacancy.html')
+
+@@include('blocks/modals/special.html')
+
+@@include('blocks/modals/calendar.html')
+
+@@include('blocks/footer.html')

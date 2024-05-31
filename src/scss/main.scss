@@ -1,0 +1,220 @@
+@import "./../fonts/grandis/stylesheet.css";
+@import "./blocks/*.scss";
+
+
+* {
+    font-family: 'Grandis Extended';
+}
+
+body{
+    background: #0A4A7F;
+}
+
+.swiper-pagination-bullet {
+    background: #fff !important;
+    opacity: 0.5 !important;
+    width: 6px !important;
+    height: 6px !important;
+    transition: all .5s .1s ease;
+    margin: 0 7px !important;
+}
+.swiper-pagination_blue .swiper-pagination-bullet {
+    background: #0A4A7F !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: transparent !important;
+    width: 14px !important;
+    height: 14px !important;
+    border: 2px solid #fff !important;
+    opacity: 1 !important;
+    transition: all .1s ease;
+}
+.swiper-pagination_blue .swiper-pagination-bullet-active {
+    border: 2px solid #0A4A7F !important;
+    background: transparent !important;
+}
+
+.swiper-wrapper {
+    padding-bottom: 40px;
+}
+
+.swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+}
+
+
+// intelInput
+
+.iti {
+    width: 100%;
+}
+
+.iti__selected-flag {
+    margin-left: 20px;
+    padding-right: 20px;
+}
+
+.iti__country-list {
+    width: 100%;
+    max-width: 425px;
+    background-color: #002D52 !important;
+    border-radius: 10px;
+    position: static !important;
+    margin-top: 10px !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: #fff;
+    top: 80px;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.iti--allow-dropdown input, .iti--allow-dropdown input[type=text], .iti--allow-dropdown input[type=tel], .iti--separate-dial-code input, .iti--separate-dial-code input[type=text], .iti--separate-dial-code input[type=tel] {
+    padding-left: 70px !important;
+}
+
+.iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag {
+    background: transparent !important;
+}
+
+.iti__arrow {
+    border-top: 4px solid rgba(255, 255, 255, 0.6) !important;
+}
+
+.iti__arrow--up {
+    border-top: 3px solid transparent !important;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.6) !important;
+}
+
+
+// radio btn ABOUT page 
+
+input[type="radio"]:checked ~ label {
+    font-weight: 700;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+
+
+.modal {
+    .air-datepicker.-inline- {
+        background: transparent;
+    }
+    .air-datepicker-body--cells {
+        --adp-day-cell-height: 44px;
+        --adp-day-cell-width: 44px;
+        gap: 5px;
+        --adp-color: #fff;
+    }
+    .air-datepicker-cell.-day-.-disabled- {
+        opacity: 0.5;
+    }
+    .air-datepicker-nav--action svg {
+        width: 10px;
+    }
+    .air-datepicker-nav--action svg path {
+        stroke: none;
+        fill: #fff
+    }
+    .air-datepicker-nav--action {
+        --adp-nav-arrow-color: #fff;
+        width: 38px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        path {
+            width: 8px;
+        }
+    }
+    .air-datepicker-nav--title {
+        font-size: 16px;
+    }
+    .air-datepicker-nav {
+        max-width: 256px;
+        margin: 0 auto;
+    }
+    .air-datepicker-nav--action:hover {
+        background: transparent;
+    }
+    .air-datepicker-cell {
+        color: #fff;
+        // opacity: 0.5;
+    }
+    .air-datepicker-cell.-day-.-current- {
+        position: relative;
+        &:after {
+            content: '';
+            width: 4px;
+            height: 4px;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #fff;
+        }
+    }
+    .air-datepicker-body--day-name {
+        color: #fff;
+    }
+    .air-datepicker-cell.-day-.-other-month- {
+        opacity: 0;
+        visibility: hidden;
+    }
+    .air-datepicker.-inline-,
+    .air-datepicker-nav {
+        border: none;
+    }
+    .air-datepicker-nav--title,
+    .air-datepicker-nav--title i {
+        color: #fff;
+    }
+    .air-datepicker-nav--action.-disabled- {
+        visibility: visible;
+        pointer-events: none;
+        opacity: 0.2;
+    }
+    .air-datepicker-nav--title:hover {
+        background: transparent;
+    }
+    .air-datepicker-nav--action:hover,
+    .air-datepicker-cell.-day-.-focus-.-current-,
+    .air-datepicker-cell.-day-.-focus-,
+    .air-datepicker-cell.-day-.-selected- {
+        border-radius: 50%;
+        border: 1px solid #0E88EC;
+        background: transparent;
+        opacity: 1;
+        font-weight: bold;
+    }
+
+    .air-datepicker-cell.-day-.-focus-.-disabled- {
+        font-weight: normal;
+        border: none;
+        opacity: 0.5;
+        --adp-color-disabled: #fff;
+    }
+}
+
+// scrollbar
+
+.about-scroll {
+    &::-webkit-scrollbar {
+        width: 2px;
+        height: 3px;
+        background: rgba(#355B7B, .1);
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #6A89A4;
+    }
+}
+

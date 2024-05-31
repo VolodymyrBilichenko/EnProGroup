@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Avalon</title>
+
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/main.css">
+	<!-- <link rel="stylesheet" href="./files/swiper/swiper.min.css" /> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+	<!-- intelInput -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+
+	<!-- favicon -->
+	<link rel="icon" href="./img/icons/favicon.svg" type="image/x-icon">
+
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+	<header class="bg-blue-500 py-4 border-b-2 border-b-whiteOp-300 z-30 lg:bg-transparent lg:border-none transition-all absolute w-full">
+		<div class="container xl:max-w-[1920px]">
+			<div class="header__inner flex items-center justify-between gap-3 relative">
+				<a href="../index.html">
+					<img src="./img/index/logo-desk.svg" class="hidden lg:min-w-[80px] lg:block" alt="logo">
+					<img src="./img/icons/logo-mob.svg" class="lg:hidden" alt="logo ic">
+				</a>
+
+
+				<div class="items-center gap-10 hidden lg:flex">
+					<div class="relative ">
+						<button type="button" class="projectsButton flex items-center gap-1 text-white text-sm
+							before:block before:w-0 hover:before:w-2/3 before:h-[1px] before:bg-white before:absolute before:bottom-[-5px] before:left-0 before:transition-all before:duration-300
+							after:block after:w-0 hover:after:w-2/3 after:h-[1px] after:bg-white after:absolute after:bottom-[-9px] after:right-0 after:transition-all after:duration-300
+						">
+							Проекты
+							<img src="./img/index/small-arrow-white.svg" alt="ic">
+						</button>
+						<div
+							class="projectsMenu flex flex-col p-6 rounded-xl bg-blue-500 absolute top-[30px] left-0 border border-whiteOp-300 hidden">
+							<a href="#" class="text-white text-sm mb-4 whitespace-nowrap relative
+								before:block before:w-0 hover:before:w-2/3 before:h-[1px] before:bg-white before:absolute before:bottom-[-5px] before:left-0 before:transition-all before:duration-300
+								after:block after:w-0 hover:after:w-2/3 after:h-[1px] after:bg-white after:absolute after:bottom-[-9px] after:right-0 after:transition-all after:duration-300
+							">
+								BUDDHA | Club House
+							</a>
+							<a href="#" class="text-white text-sm mb-4 relative
+								before:block before:w-0 hover:before:w-2/3 before:h-[1px] before:bg-white before:absolute before:bottom-[-5px] before:left-0 before:transition-all before:duration-300
+								after:block after:w-0 hover:after:w-2/3 after:h-[1px] after:bg-white after:absolute after:bottom-[-9px] after:right-0 after:transition-all after:duration-300
+							">
+								OM | Club House
+							</a>
+							<a href="#" class="text-white text-sm relative
+								before:block before:w-0 hover:before:w-2/3 before:h-[1px] before:bg-white before:absolute before:bottom-[-5px] before:left-0 before:transition-all before:duration-300
+								after:block after:w-0 hover:after:w-2/3 after:h-[1px] after:bg-white after:absolute after:bottom-[-9px] after:right-0 after:transition-all after:duration-300
+							">
+								JUST Club House
+							</a>
+						</div>
+					</div>
+					<a href="#" class="text-white text-sm relative transition-all
+						before:block before:w-0 hover:before:w-2/3 before:h-[1px] before:bg-white before:absolute before:bottom-[-5px] before:left-0 before:transition-all before:duration-300
+						after:block after:w-0 hover:after:w-2/3 after:h-[1px] after:bg-white after:absolute after:bottom-[-9px] after:right-0 after:transition-all after:duration-300
+					">
+						Про компанию
+					</a>
+					<a href="#" class="text-white text-sm relative
+						before:block before:w-0 hover:before:w-2/3 before:h-[1px] before:bg-white before:absolute before:bottom-[-5px] before:left-0 before:transition-all before:duration-300
+						after:block after:w-0 hover:after:w-2/3 after:h-[1px] after:bg-white after:absolute after:bottom-[-9px] after:right-0 after:transition-all after:duration-300
+					">
+						Почему Бали?
+					</a>
+					<a href="#" class="text-white text-sm relative
+						before:block before:w-0 hover:before:w-2/3 before:h-[1px] before:bg-white before:absolute before:bottom-[-5px] before:left-0 before:transition-all before:duration-300
+						after:block after:w-0 hover:after:w-2/3 after:h-[1px] after:bg-white after:absolute after:bottom-[-9px] after:right-0 after:transition-all after:duration-300
+					">
+						Сотрудничество
+					</a>
+					<a href="#" class="text-white text-sm relative
+						before:block before:w-0 hover:before:w-2/3 before:h-[1px] before:bg-white before:absolute before:bottom-[-5px] before:left-0 before:transition-all before:duration-300
+						after:block after:w-0 hover:after:w-2/3 after:h-[1px] after:bg-white after:absolute after:bottom-[-9px] after:right-0 after:transition-all after:duration-300
+					">
+						Карьера
+					</a>
+					<a href="#" class="text-white text-sm relative
+						before:block before:w-0 hover:before:w-2/3 before:h-[1px] before:bg-white before:absolute before:bottom-[-5px] before:left-0 before:transition-all before:duration-300
+						after:block after:w-0 hover:after:w-2/3 after:h-[1px] after:bg-white after:absolute after:bottom-[-9px] after:right-0 after:transition-all after:duration-300
+					">
+						Контакты
+					</a>
+				</div>
+
+
+				<button type="button"
+					class="3xl:flex hidden w-full max-w-[250px] border border-whiteOp-400 rounded-xl p-4 text-white text-sm font-bold hover:bg-white hover:text-blue-400 hover:border-white transition-all xl:justify-center">
+					Запланировать встречу
+				</button>
+				<a href="tel:+6281246502783" class="3xl:flex hidden items-center gap-1 text-white text-base font-bold ">
+					<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M15.403 2.633C13.708 0.936 11.454 0.001 9.053 0C4.105 0 0.077 4.027 0.075 8.977C0.075 10.559 0.488 12.103 1.273 13.465L0 18.116L4.759 16.867C6.071 17.582 7.547 17.959 9.049 17.96H9.053C14 17.96 18.028 13.933 18.03 8.983C18.03 6.585 17.098 4.33 15.403 2.633ZM9.053 16.445H9.05C7.711 16.444 6.398 16.085 5.252 15.404L4.98 15.242L2.156 15.983L2.909 13.23L2.732 12.948C1.985 11.76 1.591 10.387 1.591 8.977C1.593 4.863 4.94 1.516 9.056 1.516C11.049 1.517 12.922 2.294 14.331 3.704C15.739 5.115 16.515 6.989 16.514 8.983C16.512 13.097 13.165 16.445 9.053 16.445ZM13.146 10.856C12.921 10.743 11.819 10.201 11.613 10.126C11.408 10.051 11.259 10.014 11.109 10.238C10.959 10.462 10.529 10.967 10.398 11.117C10.267 11.267 10.136 11.285 9.912 11.173C9.688 11.061 8.965 10.824 8.108 10.06C7.441 9.465 6.991 8.731 6.86 8.506C6.729 8.281 6.846 8.16 6.959 8.048C7.06 7.948 7.183 7.786 7.295 7.655C7.407 7.524 7.444 7.431 7.519 7.281C7.594 7.131 7.557 7 7.5 6.888C7.444 6.775 6.995 5.671 6.808 5.222C6.627 4.787 6.442 4.845 6.304 4.839C6.174 4.833 6.024 4.831 5.875 4.831C5.725 4.831 5.482 4.887 5.276 5.111C5.07 5.336 4.491 5.878 4.491 6.982C4.491 8.086 5.295 9.153 5.407 9.303C5.519 9.453 6.989 11.718 9.239 12.69C9.775 12.921 10.193 13.059 10.518 13.163C11.055 13.334 11.544 13.309 11.931 13.252C12.362 13.188 13.258 12.71 13.445 12.186C13.632 11.662 13.632 11.213 13.576 11.119C13.52 11.025 13.369 10.968 13.146 10.856Z"
+							fill="white" style="fill:white;fill-opacity:1;" />
+					</svg>
+
+					+62 (812) 4650-27-83
+				</a>
+				<div class="hidden xl:flex xl:flex-col relative">
+					<button class="projectsButton flex items-center gap-1 text-white text-sm">
+						EN
+						<img src="./img/index/small-arrow-white.svg" alt="ic">
+					</button>
+					<div
+						class="projectsMenu flex flex-col p-6 rounded-xl bg-blue-500 absolute top-[30px] left-[50%] translate-x-[-50%] border border-whiteOp-300 hidden">
+						<a href="#" class="text-white text-sm mb-4 hover:text-blue-400 transition-all">
+							UA
+						</a>
+						<a href="#" class="text-white text-sm hover:text-blue-400 transition-all">
+							RU
+						</a>
+					</div>
+				</div>
+				<div class="gap-1 hidden xl:flex">
+					<a href="#"
+						class="min-w-[48px] h-[48px] border border-white rounded-full hover:bg-white transition-all flex items-center justify-center group">
+						<svg class="fill-white group-hover:fill-blue-600 transition-all" width="25" height="25"
+							viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M20.9118 4.14053C18.6096 1.83715 15.5481 0.567634 12.2866 0.566406C5.56551 0.566406 0.0956566 6.0338 0.093202 12.7549C0.0919747 14.9032 0.653452 17.0004 1.72036 18.8485L0.0664062 24.9799L6.45416 23.47C8.23513 24.4416 10.2395 24.953 12.2804 24.9543H12.2853C19.0052 24.9543 24.4749 19.4856 24.4786 12.7658C24.4811 9.50791 23.214 6.44515 20.9118 4.14053ZM18.2519 17.1115C17.9981 17.8231 16.7542 18.5091 16.1951 18.5591C15.6361 18.6104 15.1124 18.8119 12.5392 17.7974C9.44236 16.5768 7.4868 13.4018 7.33544 13.1991C7.18285 12.9953 6.0916 11.5476 6.0916 10.0486C6.0916 8.54961 6.8789 7.81233 7.15851 7.50837C7.43802 7.20319 7.76764 7.12751 7.97147 7.12751C8.17408 7.12751 8.37791 7.12751 8.55494 7.13487C8.77217 7.14346 9.01271 7.15441 9.24099 7.66096C9.51191 8.26396 10.104 9.77034 10.1796 9.92293C10.2553 10.0755 10.3066 10.2537 10.2053 10.4563C10.104 10.659 10.0527 10.7859 9.90136 10.9642C9.74877 11.1423 9.58155 11.3609 9.44482 11.4975C9.29222 11.6489 9.1335 11.815 9.31053 12.1189C9.48879 12.424 10.0991 13.4214 11.0048 14.2282C12.1694 15.2658 13.1495 15.5868 13.4547 15.7406C13.7599 15.8932 13.9368 15.8675 14.1151 15.6637C14.2934 15.4611 14.8768 14.7751 15.0794 14.4699C15.282 14.1647 15.486 14.216 15.7655 14.3173C16.045 14.4186 17.5428 15.1559 17.8467 15.3085C18.1519 15.4611 18.3545 15.5368 18.4302 15.6637C18.5059 15.7895 18.5059 16.3998 18.2519 17.1115Z" />
+						</svg>
+					</a>
+					<a href="#"
+						class="min-w-[48px] h-[48px] border border-white rounded-full hover:bg-white transition-all flex items-center justify-center group">
+						<svg class="fill-white group-hover:fill-blue-600 transition-all" width="25" height="26"
+							viewBox="0 0 25 26" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M12.2727 2.71001C15.5519 2.71001 15.9401 2.72443 17.2298 2.78191C18.4283 2.83468 19.0755 3.03606 19.5069 3.20389C20.0775 3.42439 20.4897 3.69285 20.9164 4.11953C21.3478 4.55092 21.6116 4.95848 21.8321 5.52895C21.9998 5.96044 22.2012 6.61243 22.2539 7.80606C22.3114 9.10052 22.3258 9.48885 22.3258 12.7631C22.3258 16.0423 22.3114 16.4306 22.2539 17.7202C22.2012 18.9187 21.9998 19.5659 21.8321 19.9974C21.6116 20.5679 21.3431 20.9801 20.9164 21.4068C20.4849 21.8383 20.0775 22.1019 19.5069 22.3224C19.0755 22.4903 18.4235 22.6915 17.2298 22.7443C15.9354 22.8019 15.5471 22.8162 12.2727 22.8162C8.99366 22.8162 8.60533 22.8019 7.31567 22.7443C6.11724 22.6915 5.46995 22.4903 5.03857 22.3224C4.46809 22.1019 4.05573 21.8335 3.62904 21.4068C3.19766 20.9753 2.934 20.5679 2.7134 19.9974C2.54567 19.5659 2.34429 18.9139 2.29152 17.7202C2.23404 16.4258 2.21962 16.0375 2.21962 12.7631C2.21962 9.48405 2.23404 9.09571 2.29152 7.80606C2.34429 6.60762 2.54567 5.96044 2.7134 5.52895C2.934 4.95848 3.20247 4.54611 3.62904 4.11953C4.06053 3.68804 4.46809 3.42439 5.03857 3.20389C5.46995 3.03606 6.12194 2.83468 7.31567 2.78191C8.60533 2.72443 8.99366 2.71001 12.2727 2.71001ZM12.2727 0.5C8.94088 0.5 8.52382 0.514421 7.21503 0.571898C5.91106 0.629477 5.01453 0.840364 4.23798 1.14238C3.42777 1.45881 2.74224 1.87587 2.06141 2.56141C1.37587 3.24214 0.958807 3.92777 0.642375 4.73317C0.340364 5.51453 0.129477 6.40625 0.0718978 7.71023C0.0144206 9.02382 0 9.44088 0 12.7727C0 16.1046 0.0144206 16.5216 0.0718978 17.8304C0.129477 19.1344 0.340364 20.0309 0.642375 20.8076C0.958807 21.6177 1.37587 22.3033 2.06141 22.984C2.74224 23.6648 3.42777 24.0866 4.23317 24.3983C5.01453 24.7003 5.90625 24.9112 7.21023 24.9687C8.51901 25.0262 8.93608 25.0406 12.2679 25.0406C15.5998 25.0406 16.0168 25.0262 17.3256 24.9687C18.6296 24.9112 19.5261 24.7003 20.3028 24.3983C21.1082 24.0866 21.7937 23.6648 22.4744 22.984C23.1552 22.3033 23.577 21.6177 23.8887 20.8123C24.1907 20.0309 24.4017 19.1392 24.4591 17.8352C24.5167 16.5264 24.531 16.1094 24.531 12.7775C24.531 9.44569 24.5167 9.02862 24.4591 7.71984C24.4017 6.41586 24.1907 5.51934 23.8887 4.74268C23.5866 3.92777 23.1696 3.24214 22.484 2.56141C21.8033 1.88068 21.1177 1.45881 20.3123 1.14718C19.5309 0.84517 18.6392 0.634284 17.3352 0.576704C16.0216 0.51442 15.6046 0.5 12.2727 0.5Z" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M19.4332 2.5459H5.11506C3.42055 2.5459 2.04688 3.91957 2.04688 5.61408V19.9323C2.04688 21.6268 3.42055 23.0004 5.11506 23.0004H19.4332C21.1278 23.0004 22.5014 21.6268 22.5014 19.9323V5.61408C22.5014 3.91957 21.1278 2.5459 19.4332 2.5459ZM12.272 6.46909C8.79152 6.46909 5.96777 9.29284 5.96777 12.7733C5.96777 16.2537 8.79152 19.0775 12.272 19.0775C15.7524 19.0775 18.5762 16.2537 18.5762 12.7733C18.5762 9.29284 15.7524 6.46909 12.272 6.46909ZM12.272 16.8626C10.014 16.8626 8.18269 15.0313 8.18269 12.7733C8.18269 10.5153 10.014 8.68401 12.272 8.68401C14.5299 8.68401 16.3612 10.5153 16.3612 12.7733C16.3612 15.0313 14.5299 16.8626 12.272 16.8626ZM18.8262 7.69141C19.6364 7.69141 20.298 7.03461 20.298 6.2196C20.298 5.4095 19.6364 4.74789 18.8262 4.74789C18.016 4.74789 17.3545 5.40469 17.3545 6.2196C17.3545 7.0298 18.0112 7.69141 18.8262 7.69141Z" />
+						</svg>
+					</a>
+					<a href="#"
+						class="min-w-[48px] h-[48px] border border-white rounded-full hover:bg-white transition-all flex items-center justify-center group">
+						<svg class="fill-white group-hover:fill-blue-600 transition-all" width="11" height="20"
+							viewBox="0 0 11 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M7.21813 20V10.8777H10.2789L10.7381 7.32156H7.21813V5.05147C7.21813 4.0222 7.50278 3.32076 8.98042 3.32076L10.862 3.31999V0.13923C10.5366 0.0969453 9.41964 0 8.11964 0C5.40505 0 3.54658 1.65697 3.54658 4.69927V7.32156H0.476562V10.8777H3.54658V20H7.21813Z" />
+						</svg>
+					</a>
+					<a href="#"
+						class="min-w-[48px] h-[48px] border border-white rounded-full hover:bg-white transition-all flex items-center justify-center group">
+						<svg class="fill-white group-hover:fill-blue-600 transition-all" width="20" height="14"
+							viewBox="0 0 20 14" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M18.6488 2.31398C18.4327 1.51072 17.7994 0.877518 16.9963 0.661224C15.529 0.259766 9.65993 0.259766 9.65993 0.259766C9.65993 0.259766 3.79105 0.259766 2.32381 0.646004C1.53611 0.862068 0.887344 1.51083 0.67128 2.31398C0.285156 3.78111 0.285156 6.82375 0.285156 6.82375C0.285156 6.82375 0.285156 9.88173 0.67128 11.3335C0.887573 12.1367 1.52066 12.7699 2.32392 12.9862C3.8065 13.3877 9.66016 13.3877 9.66016 13.3877C9.66016 13.3877 15.529 13.3877 16.9963 13.0015C17.7995 12.7853 18.4327 12.1521 18.649 11.349C19.035 9.88173 19.035 6.8392 19.035 6.8392C19.035 6.8392 19.0505 3.78111 18.6488 2.31398ZM7.79134 9.63465V4.01286L12.6718 6.82375L7.79134 9.63465Z" />
+						</svg>
+					</a>
+				</div>
+
+				<button id="burgerBtn" type="button" class="3xl:hidden block ">
+					<img src="./img/icons/burder.svg" class="min-w-[28px]" alt="burger ic">
+				</button>
+				<div id="burgerMenu"
+					class="burger__body hidden absolute top-[47px] lg:top-[114px] left-0 bg-blue-500 w-[calc(100%_+_60px)] -ml-[30px] flex-col flex text-center pt-12 pb-8 text-white text-lg border-t-2 border-whiteOp-300 z-10">
+					<div class="burger__proj mb-8 lg:hidden block">
+						<p id="toggleProjects"
+							class="flex items-center gap-1 justify-center hover:text-blue-400 transition-all cursor-pointer">
+							Проекты
+							<img src="./img/index/small-arrow-white.svg" alt="">
+						</p>
+						<div id="projectsBody" class="burger__proj_body mt-8 flex flex-col hidden">
+							<a href="#" class="mb-8 hover:text-blue-400 transition-all">
+								BUDDHA | Club House
+							</a>
+							<a href="#" class="mb-8 hover:text-blue-400 transition-all">
+								OM | Club House
+							</a>
+							<a href="#" class=" hover:text-blue-400 transition-all">
+								JUST Club House
+							</a>
+						</div>
+					</div>
+					<div class="lg:hidden flex flex-col gap-8 mb-12 pb-7 border-b border-whiteOp-300">
+						<a href="#" class="hover:text-blue-400 transition-all">
+							Про компанию
+						</a>
+						<a href="#" class="hover:text-blue-400 transition-all">
+							Почему Бали?
+						</a>
+						<a href="#" class="hover:text-blue-400 transition-all">
+							Агентам
+						</a>
+						<a href="#" class="hover:text-blue-400 transition-all">
+							Вакансии
+						</a>
+						<a href="#" class=" hover:text-blue-400 transition-all">
+							Контакты
+						</a>
+
+					</div>
+					<div class=" flex flex-col gap-4">
+						<a href="tel:+6281246502783"
+							class="hover:text-blue-400 transition-all font-bold text-white text-base">+62 (812)
+							4650-27-83</a>
+
+						<button type="button"
+							class="py-4 w-full text-white text-xs font-bold max-w-56 m-auto border border-white rounded-xl transition-all hover:bg-white hover:text-blue-400">
+							Запланировать встречу
+						</button>
+					</div>
+					<div class="flex xl:hidden mt-12 pt-7 border-t border-whiteOp-300 gap-11 justify-center">
+						<ul class="flex items-center gap-4">
+							<li>
+								<a href="#" class="hover:text-blue-400 transition-all text-white text-base">
+									EN
+								</a>
+							</li>
+							<li>
+								<a href="#" class="hover:text-blue-400 transition-all text-white text-base">
+									UA
+								</a>
+							</li>
+							<li>
+								<a href="#" class="hover:text-blue-400 transition-all text-white text-base">
+									RU
+								</a>
+							</li>
+						</ul>
+						<ul class="flex items-center gap-1">
+							<li>
+								<a href="#">
+									<img src="./img/index/tw-burger.svg" alt="ic">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="./img/index/inst-burger.svg" alt="ic">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="./img/index/face-burger.svg" alt="ic">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="./img/index/yout-burger.svg" alt="ic">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+<section class="bg-blue-500 pt-32 md:pt-64">
+    <div class="bg-[url('./../img/news/bgd-single.jpg')] absolute top-0 left-0 w-full h-screen z-0 opacity-70">
+        <div class="bg-gradient-to-t from-blue-500 absolute top-0 left-0 w-full h-full"></div>
+    </div>
+    <div class="container relative z-10">
+        <div class="absolute right-0 bottom-56 w-72 h-72 z-10">
+            <img src="./img/icons/vector-logo.svg" alt="vector-logo">
+        </div>
+
+        <div class="pb-14 text-content">
+            <div
+                class="flex before:w-[6px] before:rounded-sm before:h-[6px] before:bg-white before:mr-[10px] opacity-60 items-center">
+                <span class="text-white text-sm">5 апреля 2024</span>
+            </div>
+            <h1 class="text-white text-[30px] font-bold break-words mt-4 leading-9 md:leading-tight md:max-w-[1200px] md:text-[65px]">
+                Инвестиции в недвижимость во время войны: как уберечь и приумножить средства без существенных рисков
+            </h1>
+            <a href="#"
+                class="rounded-full border-[1px] border-white w-10 h-10 flex items-center justify-center mt-8 mb-14 md:w-14 md:h-14">
+                <img src="./img/icons/socials.svg" class="md:w-6" alt="Soc">
+            </a>
+            <b class="text-white text-base md:text-xl mb-2 block">
+                Квартиры в эко-городе LUCKY LAND от строительной компании DIM теперь можно приобрести по государственным
+                программам доступного кредитования жилья «еОселя» и компенсации за разрушенное или поврежденное жилье
+                «еВосстановление».
+            </b>
+            <p class="text-white text-base md:text-xl my-2 md:my-12">
+                Дополнительные опции приобретения жилья в LUCKY LAND открылись благодаря тому, что дом №3 эко-города
+                недавно получил официальный адрес.
+            </p>
+            <img class="my-14 rounded-[20px]" src="./img/news/bgd-single.jpg" alt="">
+            <blockquote class="text-white text-base md:text-xl mt-7 md:pl-9 relative">
+                <div class="blockquote-lines">
+                    <img src="./img/icons/quotes.svg" alt="Quotes">
+                </div>
+                «Сегодня мы получаем все больше запросов на покупку недвижимости по государственным программам. Поэтому
+                как только наши проекты получают все необходимые разрешительные документы, мы присоединяемся к таким
+                программам. Для нас важно реализовать все возможности, которые сделают для украинцев покупку жилья более
+                комфортной», — комментирует управляющий партнер группы компаний DIM Александр Насиковский.
+            </blockquote>
+            <p class="text-white text-base md:text-xl my-2 md:my-12">
+                Программа «еОселя» – это государственная инициатива для поддержки населения, желающего приобрести
+                собственное жилье. Она дает желающим возможность получить ипотеку от государства с фиксированной ставкой
+                от 3 до 7% сроком до 20 лет.
+            </p>
+            <p class="text-white text-base md:text-xl my-2 md:my-12">
+                Программа «еВосстановление» — государственная программа помощи владельцам разрушенного или поврежденного
+                в результате войны жилья, позволяющая получить компенсацию в зависимости от уровня ущерба.
+            </p>
+            <p class="text-white text-base md:text-xl mt-8">
+                Узнать больше об условиях приобретения квартиры в LUCKY LAND по одной из программ можно в отделе продаж
+                по ул. Берковецкой, 4Д.
+            </p>
+        </div>
+    </div>
+</section>
+<section class="bg-blue-600 pt-14 pb-24">
+    <div class="container">
+        <div class="">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-white font-bold text-[30px]">
+                    Другие акции
+                </h2>
+
+                <div class="w-fit opacity-20 hidden md:flex">
+                    <button type="button" class="button-prev mr-9">
+                        <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.95971 10.8841L13.5787 2.26518L12 0.686525L0.686291 12.0002L12 23.3139L13.5787 21.7353L4.96009 13.1167L21.6296 13.1167L21.6297 10.8841L4.95971 10.8841Z"
+                                fill="white" style="fill:white;fill-opacity:1;" />
+                        </svg>
+                    </button>
+                    <button type="button" class="button-next">
+                        <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17.0403 10.8841L8.42134 2.26518L10 0.686525L21.3137 12.0002L10 23.3139L8.42133 21.7353L17.0399 13.1167L0.370369 13.1167L0.370346 10.8841L17.0403 10.8841Z"
+                                fill="white" style="fill:white;fill-opacity:1;" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="swiper else-articles">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="articlesSingle.html" class="group">
+                            <div class="relative">
+                                <div class="block-bottom-point z-20 border-blue-600 bg-blue-600 after:bg-blue-500">
+                                </div>
+                                <img class="mb-5 rounded-3xl w-full h-[210px] md:h-[300px] object-cover"
+                                    src="./img/news/cardImage.jpg" alt="Image">
+                            </div>
+                            <h2
+                                class="mb-4 group-hover:underline text-white text-base md:text-lg leading-4 md:leading-5">
+                                <strong>Название интересной <br>статьи в две строки</strong>
+                            </h2>
+                            <p class="text-white line-clamp-2 text-sm opacity-60">Our properties are situated in various
+                                areas across the island of Bali, offering a range of locations to suit every preference,
+                                offering a range of locations to suit every preference</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="articlesSingle.html" class="group">
+                            <div class="relative">
+                                <div class="block-bottom-point z-20 border-blue-600 bg-blue-600 after:bg-blue-500">
+                                </div>
+                                <img class="mb-5 rounded-3xl w-full h-[210px] md:h-[300px] object-cover"
+                                    src="./img/news/cardImage.jpg" alt="Image">
+                            </div>
+                            <h2
+                                class="mb-4 group-hover:underline text-white text-base md:text-lg leading-4 md:leading-5">
+                                <strong>Название интересной <br>статьи в две строки</strong>
+                            </h2>
+                            <p class="text-white line-clamp-2 text-sm opacity-60">Our properties are situated in various
+                                areas across the island of Bali, offering a range of locations to suit every preference,
+                                offering a range of locations to suit every preference</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="articlesSingle.html" class="group">
+                            <div class="relative">
+                                <div class="block-bottom-point z-20 border-blue-600 bg-blue-600 after:bg-blue-500">
+                                </div>
+                                <img class="mb-5 rounded-3xl w-full h-[210px] md:h-[300px] object-cover"
+                                    src="./img/news/cardImage.jpg" alt="Image">
+                            </div>
+                            <h2
+                                class="mb-4 group-hover:underline text-white text-base md:text-lg leading-4 md:leading-5">
+                                <strong>Название интересной <br>статьи в две строки</strong>
+                            </h2>
+                            <p class="text-white line-clamp-2 text-sm opacity-60">Our properties are situated in various
+                                areas across the island of Bali, offering a range of locations to suit every preference,
+                                offering a range of locations to suit every preference</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="articlesSingle.html" class="group">
+                            <div class="relative">
+                                <div class="block-bottom-point z-20 border-blue-600 bg-blue-600 after:bg-blue-500">
+                                </div>
+                                <img class="mb-5 rounded-3xl w-full h-[210px] md:h-[300px] object-cover"
+                                    src="./img/news/cardImage.jpg" alt="Image">
+                            </div>
+                            <h2
+                                class="mb-4 group-hover:underline text-white text-base md:text-lg leading-4 md:leading-5">
+                                <strong>Название интересной <br>статьи в две строки</strong>
+                            </h2>
+                            <p class="text-white line-clamp-2 text-sm opacity-60">Our properties are situated in various
+                                areas across the island of Bali, offering a range of locations to suit every preference,
+                                offering a range of locations to suit every preference</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="articlesSingle.html" class="group">
+                            <div class="relative">
+                                <div class="block-bottom-point z-20 border-blue-600 bg-blue-600 after:bg-blue-500">
+                                </div>
+                                <img class="mb-5 rounded-3xl w-full h-[210px] md:h-[300px] object-cover"
+                                    src="./img/news/cardImage.jpg" alt="Image">
+                            </div>
+                            <h2
+                                class="mb-4 group-hover:underline text-white text-base md:text-lg leading-4 md:leading-5">
+                                <strong>Название интересной <br>статьи в две строки</strong>
+                            </h2>
+                            <p class="text-white line-clamp-2 text-sm opacity-60">Our properties are situated in various
+                                areas across the island of Bali, offering a range of locations to suit every preference,
+                                offering a range of locations to suit every preference</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="mt-a bg-blue-600 pt-14 md:pt-24 mt-auto">
+	<div class="container">
+
+		<div class="md:flex md:items-center gap-5 justify-between md:mb-24" >
+			<img src="./img/index/a-footer.png" class="max-w-[379px] hidden lg:block" alt="ph">			
+			<div class="w-fit">
+				<div class="md:mb-[30px] md:pb-[30px] border-b border-white/10 mb-5 pb-5">
+					<a href="tel:+6281246502783" class="flex items-center gap-4 mb-7 md:gap-5 group">
+						<img src="./img/index/whatsap.svg" class="md:w-[70px] md:h-[70px]" alt="ic">
+						<div>
+							<span class="text-white/40 text-sm md:text-base md:mb-2">
+								WhatsApp 24/7 online
+							</span>
+							<p class="text-white font-bold text-sm md:text-xl group-hover:text-blue-400 transition-all">
+								+62 (812) 4650-27-83
+							</p>
+						</div>
+					</a>
+					<a href="mailto:mail@avalonbali.com" class="flex items-center gap-4 md:gap-5 group">
+						<img src="./img/index/mail.svg" class="md:w-[70px] md:h-[70px]" alt="ic">
+						<div>
+							<span class="text-white/40 text-sm md:text-base md:mb-2">
+								Email us
+							</span>
+							<p class="text-white font-bold text-sm md:text-xl group-hover:text-blue-400 transition-all">
+								mail@avalonbali.com
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="flex gap-[5px] mb-5">
+					<a href="#" class="min-w-[45px] h-[45px] md:min-w-[60px] md:h-[60px] border border-whiteOp-300 rounded-full hover:bg-white transition-all flex items-center justify-center group">
+						<svg class="fill-white group-hover:fill-blue-600 w-[45%] transition-all" 
+							width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+							<path d="M20.9118 4.14053C18.6096 1.83715 15.5481 0.567634 12.2866 0.566406C5.56551 0.566406 0.0956566 6.0338 0.093202 12.7549C0.0919747 14.9032 0.653452 17.0004 1.72036 18.8485L0.0664062 24.9799L6.45416 23.47C8.23513 24.4416 10.2395 24.953 12.2804 24.9543H12.2853C19.0052 24.9543 24.4749 19.4856 24.4786 12.7658C24.4811 9.50791 23.214 6.44515 20.9118 4.14053ZM18.2519 17.1115C17.9981 17.8231 16.7542 18.5091 16.1951 18.5591C15.6361 18.6104 15.1124 18.8119 12.5392 17.7974C9.44236 16.5768 7.4868 13.4018 7.33544 13.1991C7.18285 12.9953 6.0916 11.5476 6.0916 10.0486C6.0916 8.54961 6.8789 7.81233 7.15851 7.50837C7.43802 7.20319 7.76764 7.12751 7.97147 7.12751C8.17408 7.12751 8.37791 7.12751 8.55494 7.13487C8.77217 7.14346 9.01271 7.15441 9.24099 7.66096C9.51191 8.26396 10.104 9.77034 10.1796 9.92293C10.2553 10.0755 10.3066 10.2537 10.2053 10.4563C10.104 10.659 10.0527 10.7859 9.90136 10.9642C9.74877 11.1423 9.58155 11.3609 9.44482 11.4975C9.29222 11.6489 9.1335 11.815 9.31053 12.1189C9.48879 12.424 10.0991 13.4214 11.0048 14.2282C12.1694 15.2658 13.1495 15.5868 13.4547 15.7406C13.7599 15.8932 13.9368 15.8675 14.1151 15.6637C14.2934 15.4611 14.8768 14.7751 15.0794 14.4699C15.282 14.1647 15.486 14.216 15.7655 14.3173C16.045 14.4186 17.5428 15.1559 17.8467 15.3085C18.1519 15.4611 18.3545 15.5368 18.4302 15.6637C18.5059 15.7895 18.5059 16.3998 18.2519 17.1115Z"/>
+						</svg>
+					</a>
+					<a href="#" class="min-w-[45px] h-[45px] md:min-w-[60px] md:h-[60px] border border-whiteOp-300 rounded-full hover:bg-white transition-all flex items-center justify-center group">
+						<svg class="fill-white group-hover:fill-blue-600 w-[45%] transition-all"
+							width="25" height="26" viewBox="0 0 25 26" xmlns="http://www.w3.org/2000/svg">
+							<path d="M12.2727 2.71001C15.5519 2.71001 15.9401 2.72443 17.2298 2.78191C18.4283 2.83468 19.0755 3.03606 19.5069 3.20389C20.0775 3.42439 20.4897 3.69285 20.9164 4.11953C21.3478 4.55092 21.6116 4.95848 21.8321 5.52895C21.9998 5.96044 22.2012 6.61243 22.2539 7.80606C22.3114 9.10052 22.3258 9.48885 22.3258 12.7631C22.3258 16.0423 22.3114 16.4306 22.2539 17.7202C22.2012 18.9187 21.9998 19.5659 21.8321 19.9974C21.6116 20.5679 21.3431 20.9801 20.9164 21.4068C20.4849 21.8383 20.0775 22.1019 19.5069 22.3224C19.0755 22.4903 18.4235 22.6915 17.2298 22.7443C15.9354 22.8019 15.5471 22.8162 12.2727 22.8162C8.99366 22.8162 8.60533 22.8019 7.31567 22.7443C6.11724 22.6915 5.46995 22.4903 5.03857 22.3224C4.46809 22.1019 4.05573 21.8335 3.62904 21.4068C3.19766 20.9753 2.934 20.5679 2.7134 19.9974C2.54567 19.5659 2.34429 18.9139 2.29152 17.7202C2.23404 16.4258 2.21962 16.0375 2.21962 12.7631C2.21962 9.48405 2.23404 9.09571 2.29152 7.80606C2.34429 6.60762 2.54567 5.96044 2.7134 5.52895C2.934 4.95848 3.20247 4.54611 3.62904 4.11953C4.06053 3.68804 4.46809 3.42439 5.03857 3.20389C5.46995 3.03606 6.12194 2.83468 7.31567 2.78191C8.60533 2.72443 8.99366 2.71001 12.2727 2.71001ZM12.2727 0.5C8.94088 0.5 8.52382 0.514421 7.21503 0.571898C5.91106 0.629477 5.01453 0.840364 4.23798 1.14238C3.42777 1.45881 2.74224 1.87587 2.06141 2.56141C1.37587 3.24214 0.958807 3.92777 0.642375 4.73317C0.340364 5.51453 0.129477 6.40625 0.0718978 7.71023C0.0144206 9.02382 0 9.44088 0 12.7727C0 16.1046 0.0144206 16.5216 0.0718978 17.8304C0.129477 19.1344 0.340364 20.0309 0.642375 20.8076C0.958807 21.6177 1.37587 22.3033 2.06141 22.984C2.74224 23.6648 3.42777 24.0866 4.23317 24.3983C5.01453 24.7003 5.90625 24.9112 7.21023 24.9687C8.51901 25.0262 8.93608 25.0406 12.2679 25.0406C15.5998 25.0406 16.0168 25.0262 17.3256 24.9687C18.6296 24.9112 19.5261 24.7003 20.3028 24.3983C21.1082 24.0866 21.7937 23.6648 22.4744 22.984C23.1552 22.3033 23.577 21.6177 23.8887 20.8123C24.1907 20.0309 24.4017 19.1392 24.4591 17.8352C24.5167 16.5264 24.531 16.1094 24.531 12.7775C24.531 9.44569 24.5167 9.02862 24.4591 7.71984C24.4017 6.41586 24.1907 5.51934 23.8887 4.74268C23.5866 3.92777 23.1696 3.24214 22.484 2.56141C21.8033 1.88068 21.1177 1.45881 20.3123 1.14718C19.5309 0.84517 18.6392 0.634284 17.3352 0.576704C16.0216 0.51442 15.6046 0.5 12.2727 0.5Z"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M19.4332 2.5459H5.11506C3.42055 2.5459 2.04688 3.91957 2.04688 5.61408V19.9323C2.04688 21.6268 3.42055 23.0004 5.11506 23.0004H19.4332C21.1278 23.0004 22.5014 21.6268 22.5014 19.9323V5.61408C22.5014 3.91957 21.1278 2.5459 19.4332 2.5459ZM12.272 6.46909C8.79152 6.46909 5.96777 9.29284 5.96777 12.7733C5.96777 16.2537 8.79152 19.0775 12.272 19.0775C15.7524 19.0775 18.5762 16.2537 18.5762 12.7733C18.5762 9.29284 15.7524 6.46909 12.272 6.46909ZM12.272 16.8626C10.014 16.8626 8.18269 15.0313 8.18269 12.7733C8.18269 10.5153 10.014 8.68401 12.272 8.68401C14.5299 8.68401 16.3612 10.5153 16.3612 12.7733C16.3612 15.0313 14.5299 16.8626 12.272 16.8626ZM18.8262 7.69141C19.6364 7.69141 20.298 7.03461 20.298 6.2196C20.298 5.4095 19.6364 4.74789 18.8262 4.74789C18.016 4.74789 17.3545 5.40469 17.3545 6.2196C17.3545 7.0298 18.0112 7.69141 18.8262 7.69141Z"/>
+						</svg>
+					</a>
+					<a href="#" class="min-w-[45px] h-[45px] md:min-w-[60px] md:h-[60px] border border-whiteOp-300 rounded-full hover:bg-white transition-all flex items-center justify-center group">
+						<svg class="fill-white group-hover:fill-blue-600 w-[45%] transition-all"
+							width="11" height="20" viewBox="0 0 11 20" xmlns="http://www.w3.org/2000/svg">
+							<path d="M7.21813 20V10.8777H10.2789L10.7381 7.32156H7.21813V5.05147C7.21813 4.0222 7.50278 3.32076 8.98042 3.32076L10.862 3.31999V0.13923C10.5366 0.0969453 9.41964 0 8.11964 0C5.40505 0 3.54658 1.65697 3.54658 4.69927V7.32156H0.476562V10.8777H3.54658V20H7.21813Z"/>
+						</svg>
+					</a>
+					<a href="#" class="min-w-[45px] h-[45px] md:min-w-[60px] md:h-[60px] border border-whiteOp-300 rounded-full hover:bg-white transition-all flex items-center justify-center group">
+						<svg class="fill-white group-hover:fill-blue-600 w-[45%] transition-all"
+							width="20" height="14" viewBox="0 0 20 14" xmlns="http://www.w3.org/2000/svg">
+							<path d="M18.6488 2.31398C18.4327 1.51072 17.7994 0.877518 16.9963 0.661224C15.529 0.259766 9.65993 0.259766 9.65993 0.259766C9.65993 0.259766 3.79105 0.259766 2.32381 0.646004C1.53611 0.862068 0.887344 1.51083 0.67128 2.31398C0.285156 3.78111 0.285156 6.82375 0.285156 6.82375C0.285156 6.82375 0.285156 9.88173 0.67128 11.3335C0.887573 12.1367 1.52066 12.7699 2.32392 12.9862C3.8065 13.3877 9.66016 13.3877 9.66016 13.3877C9.66016 13.3877 15.529 13.3877 16.9963 13.0015C17.7995 12.7853 18.4327 12.1521 18.649 11.349C19.035 9.88173 19.035 6.8392 19.035 6.8392C19.035 6.8392 19.0505 3.78111 18.6488 2.31398ZM7.79134 9.63465V4.01286L12.6718 6.82375L7.79134 9.63465Z"/>
+						</svg>
+					</a>
+				</div>
+				
+			</div>
+
+			<form action="" class="flex flex-col p-5 border border-whiteOp-300 rounded-2xl text-center md:p-12 relative mb-14 md:mb-0">
+				<img src="./img/index/dot-decor-2.png" class="absolute right-[-1px] bottom-[-1px] w-5 md:w-8" alt="decor">
+				<h2 class="font-bold text-white text-2xl mb-4 md:text-3xl md:mb-7 leading-[100%]">
+					Хотите узнать больше?
+				</h2>
+				<div class="flex flex-col gap-3 lg:gap-0">
+					<input type="text" placeholder="Имя" class="bg-white/10 lg:mb-[10px] rounded-xl text-white text-sm py-4 leading-[90%] px-5 outline-none md:p-6 md:text-base w-full">
+					<input id="phone" type="tel" class="bg-white/10 rounded-xl text-white text-sm py-4 leading-[90%] px-5 md:pl-[70px] outline-none md:p-6 md:text-base w-full">
+					<button type="submit" class="white-button w-full leading-[110%] lg:mt-8 lg:py-6">
+						Отправить заявку
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="bg-blue-500 py-7 md:py-2">
+		<div class="container">
+			<div class="flex items-center justify-between gap-8">
+				<img src="./img/index/a-footer.png" class="max-w-[96px] md:hidden" alt="ph">
+				<ul class="md:flex md:items-center py-2 md:justify-center md:w-full">
+					<li class="text-white/60 text-xs lg:text-sm mb-2 lg:mb-0 lg:border-r lg:pr-[14px] lg:mr-[14px] border-white/10 last:pr-0 last:mr-0 last:border-none">
+						<p >
+							© 2024 PT Avalon Group Bali
+						</p>
+					</li>
+					<li class="text-white/60 text-xs lg:text-sm mb-2 lg:mb-0 lg:border-r lg:pr-[14px] lg:mr-[14px] border-white/10 last:pr-0 last:mr-0 last:border-none">
+						<a href="#" class="hover:text-blue-400 transition-all">
+							Privacy Policy
+						</a>
+					</li>
+					<li class="text-white/60 text-xs lg:text-sm mb-2 lg:mb-0 lg:border-r lg:pr-[14px] lg:mr-[14px] border-white/10 last:pr-0 last:mr-0 last:border-none">
+						<a href="#" class="hover:text-blue-400 transition-all">
+							Terms & Conditions
+						</a>
+					</li>
+					<li class="text-white/60 text-xs lg:text-sm mb-2 lg:mb-0 lg:border-r lg:pr-[14px] lg:mr-[14px] border-white/10 last:pr-0 last:mr-0 last:border-none">
+						<a href="#" class="hover:text-blue-400 transition-all">
+							Сотрудничество
+						</a>
+					</li>
+					<li class="text-white/60 text-xs lg:text-sm mb-2 lg:mb-0 lg:border-r lg:pr-[14px] lg:mr-[14px] border-white/10 last:pr-0 last:mr-0 last:border-none">
+						<a href="#" class="hover:text-blue-400 transition-all">
+							Карьера
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- intelInput -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+
+<script src="./js/air-datepicker.js"></script>
+<!-- <script src="./../../files/swiper/swiper.min.js"></script> -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+<script src="./js/index.js"></script>
+</body>
+
+</html>
