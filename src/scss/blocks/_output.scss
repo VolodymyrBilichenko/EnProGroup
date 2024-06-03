@@ -737,6 +737,30 @@ video {
   margin-top: 0px;
 }
 
+.mb-\[15px\] {
+  margin-bottom: 15px;
+}
+
+.mb-\[35px\] {
+  margin-bottom: 35px;
+}
+
+.mb-\[10px\] {
+  margin-bottom: 10px;
+}
+
+.mr-\[15px\] {
+  margin-right: 15px;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .inline {
   display: inline;
 }
@@ -751,12 +775,38 @@ video {
   height: 100%;
 }
 
+.h-\[5px\] {
+  height: 5px;
+}
+
+.h-\[135px\] {
+  height: 135px;
+}
+
+.h-\[100\%\] {
+  height: 100%;
+}
+
+.h-fit {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
 
 .w-full {
   width: 100%;
+}
+
+.w-\[5px\] {
+  width: 5px;
+}
+
+.min-w-\[5px\] {
+  min-width: 5px;
 }
 
 .max-w-\[225px\] {
@@ -828,6 +878,10 @@ video {
   border-radius: 10px;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .bg-\[\#FBFBFB\] {
   --tw-bg-opacity: 1;
   background-color: rgb(251 251 251 / var(--tw-bg-opacity));
@@ -860,12 +914,28 @@ video {
   background-color: rgb(236 247 255 / var(--tw-bg-opacity));
 }
 
+.bg-black-500\/60 {
+  background-color: rgb(9 2 34 / 0.6);
+}
+
 .bg-\[url\(\'\.\.\/img\/banner-bgd\.jpg\'\)\] {
   background-image: url('../img/banner-bgd.jpg');
 }
 
 .bg-\[url\(\'\.\.\/img\/firma-bgd\.jpg\'\)\] {
   background-image: url('../img/firma-bgd.jpg');
+}
+
+.bg-\[url\(\'\.\.\/img\/oferta-1\.jpg\'\)\] {
+  background-image: url('../img/oferta-1.jpg');
+}
+
+.bg-\[url\(\'\.\.\/img\/oferta-2\.jpg\'\)\] {
+  background-image: url('../img/oferta-2.jpg');
+}
+
+.bg-\[url\(\'\.\.\/img\/oferta-3\.jpg\'\)\] {
+  background-image: url('../img/oferta-3.jpg');
 }
 
 .bg-cover {
@@ -890,6 +960,14 @@ video {
 
 .p-\[25px\] {
   padding: 25px;
+}
+
+.p-\[45px\] {
+  padding: 45px;
+}
+
+.p-10 {
+  padding: 2.5rem;
 }
 
 .px-4 {
@@ -946,6 +1024,10 @@ video {
   padding-top: 30px;
 }
 
+.pb-\[60px\] {
+  padding-bottom: 60px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -975,6 +1057,10 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-\[17px\] {
+  font-size: 17px;
 }
 
 .font-bold {
@@ -1013,6 +1099,10 @@ video {
   line-height: 26px;
 }
 
+.leading-\[20px\] {
+  line-height: 20px;
+}
+
 .text-black-500 {
   --tw-text-opacity: 1;
   color: rgb(9 2 34 / var(--tw-text-opacity));
@@ -1032,6 +1122,11 @@ video {
   color: rgb(255 255 255 / 0.3);
 }
 
+.shadow-black-500\/15 {
+  --tw-shadow-color: rgb(9 2 34 / 0.15);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 .blur {
   --tw-blur: blur(8px);
   -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1041,6 +1136,20 @@ video {
 .filter {
   -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
           filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition-all {
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.duration-300 {
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
 }
 
 .text-content blockquote,
@@ -1132,6 +1241,13 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:flex-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
   .md\:items-center {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1185,6 +1301,10 @@ video {
 
   .md\:pt-\[190px\] {
     padding-top: 190px;
+  }
+
+  .md\:pb-\[120px\] {
+    padding-bottom: 120px;
   }
 
   .md\:text-4xl {
