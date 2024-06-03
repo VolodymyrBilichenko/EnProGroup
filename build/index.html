@@ -23,7 +23,7 @@
 
 <body class="flex flex-col min-h-screen relative">
 
-	<header class="mt-[5px] absolute top-[5px] w-full">
+	<header class="mt-[5px] absolute top-[5px] w-full z-50">
 		<div class="container">
 			<div class="w-full flex items-center justify-between bg-white/95 py-[10px] px-4 rounded-[10px]">
 				<div class="w-full max-w-[95px] bg-blue-500 px-[13px] py-[11px]  flex justify-center items-center rounded-[10px] ">
@@ -38,22 +38,28 @@
 
 <section class="banner overflow-hidden">
 
-    <div class="relative -z-10">
-        <div class="bg-blue-600/45 w-full h-full absolute top-0 left-0"></div>
+    <!-- <div class="relative -z-10">
         <img src="../img/banner-bgd.jpg" class="max-w-none" alt="bgd ph">
-    </div>
+    </div> -->
+    
+    <div class="bg-[url('../img/banner-bgd.jpg')] bg-no-repeat bg-cover bg-right-top pt-[250px] pb-[180px] relative md:bg-center md:pt-[375px] md:pb-[190px]">
+        <div class="bg-blue-600/45 w-full h-full absolute top-0 left-0 z-10"></div>
 
-    <div class="container">
-        <div>
-            <h1>
+        <div class="container relative z-30">
+            <h1 class="font-bold text-white text-[40px] text-center mb-[17px] leading-10 md:text-[70px] md:leading-[85px] md:mb-5">
                 EnPro Group
             </h1>
-            <p>
+            <p class="font-medium text-white text-base text-center mb-[70px] leading-6 md:text-xl md:leading-8 md:mb-[50px]">
                 Projekty elektroenergetyczne
             </p>
-            <a href="#">
+            <a href="#" class="w-full max-w-[225px] p-5 bg-blue-500 rounded-[10px] text-white font-semibold text-base leading-5 flex m-auto items-center justify-center">
                 Czytaj więcej
             </a>
+
+        </div>
+        <div class="flex items-center justify-between absolute bottom-0 w-full z-20">
+            <span class="font-semibold text-white/30 text-[100px] leading-[122px] md:text-[200px] md:leading-[265px] lg:text-[300px] lg:leading-[300px]">En</span>
+            <span class="font-semibold text-white/30 text-[100px] leading-[122px] md:text-[200px] md:leading-[265px] lg:text-[300px] lg:leading-[300px]">Pro</span>
         </div>
     </div>
 </section>
