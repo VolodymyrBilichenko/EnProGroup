@@ -21,9 +21,9 @@
 
 </head>
 
-<body class="flex flex-col min-h-screen bg-black">
+<body class="flex flex-col min-h-screen relative">
 
-	<header class="mt-[5px]">
+	<header class="mt-[5px] absolute top-[5px] w-full">
 		<div class="container">
 			<div class="w-full flex items-center justify-between bg-white/95 py-[10px] px-4 rounded-[10px]">
 				<div class="w-full max-w-[95px] bg-blue-500 px-[13px] py-[11px]  flex justify-center items-center rounded-[10px] ">
@@ -36,7 +36,27 @@
 		</div>
 	</header>
 
+<section class="banner overflow-hidden">
 
+    <div class="relative -z-10">
+        <div class="bg-blue-600/45 w-full h-full absolute top-0 left-0"></div>
+        <img src="../img/banner-bgd.jpg" class="max-w-none" alt="bgd ph">
+    </div>
+
+    <div class="container">
+        <div>
+            <h1>
+                EnPro Group
+            </h1>
+            <p>
+                Projekty elektroenergetyczne
+            </p>
+            <a href="#">
+                Czytaj więcej
+            </a>
+        </div>
+    </div>
+</section>
 
 <footer class="">
 	
