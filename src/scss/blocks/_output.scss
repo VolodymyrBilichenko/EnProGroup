@@ -745,6 +745,80 @@ video {
   width: 66.666667%;
 }
 
+.hover_button {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.hover_button::before {
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 55 97 / var(--tw-bg-opacity));
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  content: var(--tw-content);
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.hover_button:hover {
+  --tw-shadow-color: #023761;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.hover_button:hover::before {
+  height: 14rem;
+  content: var(--tw-content);
+  width: 18rem;
+}
+
+.hover_button_ref {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.hover_button_ref::before {
+  position: absolute;
+  left: -50px;
+  top: -20px;
+  height: 0px;
+  width: 0px;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 55 97 / var(--tw-bg-opacity));
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  content: var(--tw-content);
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.hover_button_ref:hover {
+  --tw-shadow-color: #023761;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.hover_button_ref:hover::before {
+  height: 100px;
+  content: var(--tw-content);
+  width: 700px;
+}
+
 .visible {
   visibility: visible;
 }
