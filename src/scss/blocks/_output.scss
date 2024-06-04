@@ -1278,6 +1278,30 @@ video {
   background-image: url('../img/oferta-3.jpg');
 }
 
+.bg-\[url\(\'\.\/img\/banner-bgd\.jpg\'\)\] {
+  background-image: url('./img/banner-bgd.jpg');
+}
+
+.bg-\[url\(\'\.\/img\/firma-bgd\.jpg\'\)\] {
+  background-image: url('./img/firma-bgd.jpg');
+}
+
+.bg-\[url\(\'\.\/img\/oferta-1\.jpg\'\)\] {
+  background-image: url('./img/oferta-1.jpg');
+}
+
+.bg-\[url\(\'\.\/img\/oferta-2\.jpg\'\)\] {
+  background-image: url('./img/oferta-2.jpg');
+}
+
+.bg-\[url\(\'\.\/img\/oferta-3\.jpg\'\)\] {
+  background-image: url('./img/oferta-3.jpg');
+}
+
+.bg-\[url\(\'\/img\/banner-bgd\.jpg\'\)\] {
+  background-image: url('/img/banner-bgd.jpg');
+}
+
 .bg-cover {
   background-size: cover;
 }
