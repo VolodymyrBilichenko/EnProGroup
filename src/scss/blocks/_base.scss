@@ -3,30 +3,16 @@
 @tailwind utilities;
 
 @layer components {
-    .blockquote-lines {
-        @apply md:absolute md:left-0 md:before:w-[1px] md:before:h-10 before:h-[1px] before:w-10 before:bg-blue-400 before:mr-3 before:block md:after:h-10 md:after:w-[1px] after:h-[1px] after:w-10 after:bg-blue-400 after:ml-3 md:after:ml-0 md:before:mb-3 md:after:mt-3 md:before:mr-0 after:block flex md:flex-col items-center mb-4;
+    .hover_link {
+        @apply  before:block before:w-0 hover:before:w-2/3 before:h-[1px] before:bg-blue-500 before:absolute before:bottom-[-3px] before:left-0 before:transition-all before:duration-300
+        after:block after:w-0 hover:after:w-2/3 after:h-[1px] after:bg-blue-500 after:absolute after:bottom-[-6px] after:right-0 after:transition-all after:duration-300;
     }
-    .block-bottom-point {
-        @apply after:w-full after:h-full after:absolute after:rounded-md after:bg-blue-600 absolute w-4 h-4 bottom-0 right-0 bg-blue-500 box-content border-blue-500 border-[12px] rounded-tl-[10px] border-b-0 border-r-0;
+
+    .hover_link_white {
+        @apply  before:block before:w-0 hover:before:w-2/3 before:h-[1px] before:bg-white before:absolute before:bottom-[-3px] before:left-0 before:transition-all before:duration-300
+        after:block after:w-0 hover:after:w-2/3 after:h-[1px] after:bg-white after:absolute after:bottom-[-6px] after:right-0 after:transition-all after:duration-300;
     }
-    .career-select {
-        @apply border-t border-t-blue-700 last:border-b last:border-b-blue-700
-    }
-    .career-select-body {
-        @apply invisible pb-12 opacity-0 hidden group-[.active]:block group-[.active]:visible group-[.active]:opacity-100 group-[.active]:mt-7 transition-all [&_*]:text-white [&_*]:text-sm md:[&_*]:text-lg [&_*]:py-1 mt-8 [&_li]:before:w-[6px] md:[&_li]:before:w-[8px] [&_li]:before:h-[6px] md:[&_li]:before:h-[8px] [&_li]:before:min-w-[6px] md:[&_li]:before:min-w-[8px] [&_li]:before:mr-2 [&_li]:before:rounded-full [&_li]:before:bg-white [&_li]:before:block [&_li]:flex [&_li]:items-center
-    }
-    .white-button {
-        @apply w-fit px-5 md:px-8 py-4 lg:py-5 block text-sm md:text-base bg-white rounded-xl text-center font-bold whitespace-nowrap text-blue-500 hover:text-white hover:bg-blue-400 transition-all md:m-0
-    }
-    .white-border-button {
-        @apply text-white font-bold hover:bg-white hover:text-blue-400 transition-all rounded-[10px] border-white border-[1px] text-sm md:text-base cursor-pointer px-7 py-4 md:py-5 mx-auto block mt-12
-    }
-    .blue-border-button {
-        @apply text-blue-600 py-4 px-8 text-sm font-bold border border-blue-600 rounded-[10px] block w-fit
-    }
-    .custom-input {
-        @apply bg-white/10 px-5 py-4 lg:py-6 w-full text-sm text-white leading-[120%] lg:leading-[90%] rounded-[10px] outline-none placeholder:text-white/60 block
-    }
+    
 }
 
 .text-content blockquote,

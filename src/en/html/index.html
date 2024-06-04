@@ -1,88 +1,4 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>EnProGroup</title>
-
-	<!-- font monserat -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<link rel="stylesheet" href="./css/main.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-	<!-- favicon -->
-	<link rel="icon" href="./img/icon/favicon.svg" type="image/x-icon">
-
-</head>
-
-<body class="flex flex-col min-h-screen relative" id="head">
-
-	<header class="mt-[5px] absolute top-[5px] w-full z-50">
-		<div class="container">
-			<div class="w-full flex items-center justify-between bg-white/95 py-[10px] px-4 rounded-[10px] md:py-[11px] md:px-[50px] md:rounded-[15px]">
-				<div class="w-full max-w-[95px] bg-blue-500 px-[13px] py-[11px] flex justify-center items-center rounded-[10px] md:max-w-[150px] md:py-[17px] md:px-[21px] md:rounded-[15px]">
-					<img src="../../img/icon/Logo.svg" alt="logo ic">
-				</div>
-				<ul class="hidden md:flex items-center gap-5">
-					<li>
-						<a href="#firma" class="hover_link text-black-500 text-base hover:text-blue-500 relative">
-							O firmie					
-						</a>
-					</li>
-					<li>
-						<a href="#nash" class="hover_link relative text-black-500 text-base hover:text-blue-500 transition-all">
-							Nasz Zespół
-						</a>
-					</li>
-					<li>
-						<a href="#oferta" class="hover_link relative text-black-500 text-base hover:text-blue-500 transition-all">
-							Oferta
-						</a>
-					</li>
-					<li>
-						<a href="#realizacje" class="hover_link relative text-black-500 text-base hover:text-blue-500 transition-all">
-							Realizacje
-						</a>
-					</li>
-					<li>
-						<a href="#ref" class="hover_link relative text-black-500 text-base hover:text-blue-500 transition-all">
-							Referencje
-						</a>
-					</li>
-					<li>
-						<a href="#contact" class="hover_link relative text-black-500 text-base hover:text-blue-500 transition-all">
-							Kontact
-						</a>
-					</li>
-				</ul>
-				<a href="tel:+48696771976" class="hover_link relative hidden lg:flex items-center gap-[5px] text-black-500 text-base hover:text-blue-500 transition-all">
-					<img src="../../img/tel-ic.svg" alt="tel ic">
-					+48 696 771 976
-				</a>
-				<div class="relative hidden lg:block">
-					<div class="flex items-center gap-[5px]">
-						<p class="hover_link text-black-500 text-base relative">
-							PL
-						</p>
-						<img src="../../img/icon/arrow-down.svg" alt="arrow ic">
-					</div>
-					<div class="p-5 rounded-[10px] bg-white/95 absolute top-[25px] left-[50%] translate-x-[-50%]">
-						<a href="../../en/html/index.html" class="hover_link text-black-500 text-base hover:text-blue-500 transition-all relative">EN</a>
-					</div>
-				</div>
-
-				<button type="button" class="lg:hidden">
-					<img src="../../img/icon/burger.svg" class="min-w-[25px]" alt="burger ic">
-				</button>
-			</div>
-		</div>
-	</header>
+@@include('blocks/header.html')
 
 <section class="banner overflow-hidden">
     
@@ -90,48 +6,44 @@
         <div class="bg-blue-600/45 w-full h-full absolute top-0 left-0 z-10"></div>
 
         <div class="container relative z-30">
-            <h1 class="font-bold text-white text-[40px] text-center mb-[17px] leading-10 md:text-[70px] md:leading-[85px] md:mb-5" data-aos="zoom-in">
+            <h1 class="font-bold text-white text-[40px] text-center mb-[17px] leading-10 md:text-[70px] md:leading-[85px] md:mb-5">
                 EnPro Group
             </h1>
-            <p class="font-medium text-white text-base text-center mb-[70px] leading-6 md:text-xl md:leading-8 md:mb-[50px]" data-aos="fade-up" data-aos-duration="300">
+            <p class="font-medium text-white text-base text-center mb-[70px] leading-6 md:text-xl md:leading-8 md:mb-[50px]">
                 Projekty elektroenergetyczne
             </p>
-            <a href="#" class="w-full max-w-[225px] p-5 bg-blue-500 rounded-[10px] text-white font-semibold text-base leading-5 flex m-auto items-center justify-center" data-aos="flip-up" data-aos-duration="400">
+            <a href="#" class="w-full max-w-[225px] p-5 bg-blue-500 rounded-[10px] text-white font-semibold text-base leading-5 flex m-auto items-center justify-center">
                 Czytaj więcej
             </a>
 
         </div>
         <div class="flex items-center justify-between absolute bottom-0 w-full z-20">
-            <span class="font-semibold text-white/30 text-[100px] leading-[122px] md:text-[200px] md:leading-[265px] lg:text-[300px] lg:leading-[300px]" data-aos="fade-right" data-aos-duration="800">
-                En
-            </span>
-            <span class="font-semibold text-white/30 text-[100px] leading-[122px] md:text-[200px] md:leading-[265px] lg:text-[300px] lg:leading-[300px]" data-aos="fade-right" data-aos-duration="1100">
-                Pro
-            </span>
+            <span class="font-semibold text-white/30 text-[100px] leading-[122px] md:text-[200px] md:leading-[265px] lg:text-[300px] lg:leading-[300px]">En</span>
+            <span class="font-semibold text-white/30 text-[100px] leading-[122px] md:text-[200px] md:leading-[265px] lg:text-[300px] lg:leading-[300px]">Pro</span>
         </div>
     </div>
 </section>
 
-<section id="firma" class="firma pt-[60px] pb-[30px] md:pt-[120px] md:pb-[45px] bg-[url('../img/firma-bgd.jpg')] bg-no-repeat bg-cover bg-center relative">
+<section class="firma pt-[60px] pb-[30px] md:pt-[120px] md:pb-[45px] bg-[url('../img/firma-bgd.jpg')] bg-no-repeat bg-cover bg-center relative">
     <div class="bg-white/85 w-full h-full absolute top-0 left-0"></div>
     <div class="container relative z-10">
-        <h2 class="font-semibold text-blue-600 text-xl leading-6 mb-8 text-center md:mb-[98px] md:text-[35px] md:leading-[26px]" data-aos="fade-down">
+        <h2 class="font-semibold text-blue-600 text-xl leading-6 mb-8 text-center md:mb-[98px] md:text-[35px] md:leading-[26px]">
             O firmie
         </h2>
         <div class="mb-10 lg:mb-[45px] lg:flex lg:items-center lg:flex-row-reverse lg:gap-[50px]">
-            <p class="font-medium text-black-500 text-[15px] leading-7 mb-[30px] md:text-base lg:mb-0" data-aos="fade-left">
+            <p class="font-medium text-black-500 text-[15px] leading-7 mb-[30px] md:text-base lg:mb-0">
                 Firma EnPro Group początkowo jako jednoosobowa działalność gospodarcza ANTON LUKASEVYCH ENERGO PROJECT GROUP, a następnie jako spółka z ograniczoną odpowiedzialnością, istnieje od 2022 roku. <br>
                 Obecnie nasza firma projektowa z powodzeniem kontynuuje swoją działalność w Polsce, łącząc wieloletnie doświadczenie które otrzymaliśmy jako firma projektowa Elkom która była założona w 1992 roku na Ukrainie. Od momentu powstania skoncentrowaliśmy się na projektowaniu i realizacji prac montażowych, gromadząc bogate doświadczenie i budując reputację rzetelnego i profesjonalnego partnera. Nasz zespół, składający się z wysoko wykwalifikowanych inżynierów i projektantów, z powodzeniem zrealizował wiele projektów w różnych sektorach, w tym w przemyśle, budownictwie mieszkaniowym i energetycez nowymi technologiami w celu realizacji najbardziej ambitnych projektów.
             </p>
-            <img src="../img/firma-ph.jpg" class="rounded-2xl m-auto" alt="ph" data-aos="fade-right">
+            <img src="../img/firma-ph.jpg" class="rounded-2xl m-auto" alt="ph">
         </div>
-        <div class="font-semibold text-base leading-6 text-blue-600 p-[25px] w-full bg-white rounded-2xl flex justify-center items-center text-center md:max-w-[410px] md:m-auto md:p-[28px] md:text-xl md:leading-[25px]" data-aos="fade-down">
+        <div class="font-semibold text-base leading-6 text-blue-600 p-[25px] w-full bg-white rounded-2xl flex justify-center items-center text-center md:max-w-[410px] md:m-auto md:p-[28px] md:text-xl md:leading-[25px]">
             Naszymi głównymi kontrahentami są:
         </div>
     </div>
 </section>
 
-<section  class="company py-[60px] md:py-[30px]" data-aos="zoom-in">
+<section class="company py-[60px] md:py-[30px]">
     <div class="container">
         <ul class="md:flex md:items-center md:gap-3 md:justify-between">
             <li class="w-full flex items-center justify-center mb-[70px] md:mb-0">
@@ -156,13 +68,13 @@
     </div>
 </section>
 
-<section id="nash" class="sklad bg-[#FBFBFB] py-[60px] md:py-[120px]">
+<section class="sklad bg-[#FBFBFB] py-[60px] md:py-[120px]">
     <div class="container">
-        <h2 class="mb-[30px] md:mb-[80px] font-semibold text-blue-600 text-center text-xl leading-[26px] md:text-4xl md:leading-7" data-aos="fade-down">
+        <h2 class="mb-[30px] md:mb-[80px] font-semibold text-blue-600 text-center text-xl leading-[26px] md:text-4xl md:leading-7">
             W skład zespołu <br class="md:hidden">wchodzi 10 osób
         </h2>
         <ul class="flex flex-col gap-5 md:grid md:grid-cols-2 lg:flex lg:flex-row">
-            <li class="rounded-2xl bg-blue-400 pt-[30px] pb-[50px] px-5 md:px-6 w-full" data-aos="fade-right">
+            <li class="rounded-2xl bg-blue-400 pt-[30px] pb-[50px] px-5 md:px-6 w-full">
                 <img src="../img/team-ic-1.png" class="mb-[30px] max-w-[115px] m-auto" alt="ic">
                 <h3 class="font-semibold text-black-500 text-base leading-6 mb-[5px] text-center">
                     3 osoby 
@@ -171,19 +83,19 @@
                     z uprawnieniami do projektowania bez ograniczeń
                 </p>
             </li>
-            <li class="rounded-2xl bg-blue-400 pt-[30px] pb-[50px] px-5 md:px-6 w-full" data-aos="fade-right">
+            <li class="rounded-2xl bg-blue-400 pt-[30px] pb-[50px] px-5 md:px-6 w-full">
                 <img src="../img/team-ic-2.png" class="mb-[30px] max-w-[166px] m-auto mt-0" alt="ic">
                 <h3 class="font-semibold text-black-500 text-base leading-6 mb-[5px] text-center">
                     5 asystentów projektanta
                 </h3>
             </li>
-            <li class="rounded-2xl bg-blue-400 pt-[30px] pb-[50px] px-5 md:px-6 w-full" data-aos="fade-left">
+            <li class="rounded-2xl bg-blue-400 pt-[30px] pb-[50px] px-5 md:px-6 w-full">
                 <img src="../img/team-ic-3.png" class="mb-[30px] max-w-[110px] m-auto" alt="ic">
                 <h3 class="font-semibold text-black-500 text-base leading-6 mb-[5px] text-center">
                     1 kosztorysant
                 </h3>
             </li>
-            <li class="rounded-2xl bg-blue-400 pt-[30px] pb-[50px] px-5 md:px-6 w-full" data-aos="fade-left">
+            <li class="rounded-2xl bg-blue-400 pt-[30px] pb-[50px] px-5 md:px-6 w-full" >
                 <img src="../img/team-ic-3.png" class="mb-[30px] max-w-[110px] m-auto" alt="ic">
                 <h3 class="font-semibold text-black-500 text-base leading-6 mb-[5px] text-center">
                     1 Specjalista ds. nieruchomości
@@ -196,14 +108,14 @@
     </div>
 </section>
 
-<section id="oferta" class="oferta bg-[#FBFBFB] pb-[60px] md:pb-[120px]">
+<section class="oferta bg-[#FBFBFB] pb-[60px] md:pb-[120px]">
     <div class="container">
-        <h2 class="mb-[30px] md:mb-[80px] font-semibold text-blue-600 text-center text-xl leading-[26px] md:text-4xl md:leading-7" data-aos="fade-down">
+        <h2 class="mb-[30px] md:mb-[80px] font-semibold text-blue-600 text-center text-xl leading-[26px] md:text-4xl md:leading-7">
             Oferta
         </h2>
 
-        <div class="flex flex-col gap-5 md:flex-row">
-            <div class="bg-[url('../img/oferta-1.jpg')] bg-no-repeat bg-cover p-[45px] rounded-2xl relative h-fit w-full" data-aos="fade-right" data-aos-duration="300">
+        <!-- <div class="flex flex-col gap-5 md:flex-row">
+            <div class="bg-[url('../img/oferta-1.jpg')] bg-no-repeat bg-cover p-[45px] rounded-2xl relative h-fit w-full">
                 <div class="bg-black-500/60 w-full h-full absolute top-0 left-0 rounded-2xl"></div>
                 <div class="relative z-10">
                     <img src="../img/oferta-1.png" class="m-auto mb-[15px]" alt="ic">
@@ -264,7 +176,7 @@
                     </button>
                 </div>
             </div>
-            <div class="bg-[url('../img/oferta-2.jpg')] bg-no-repeat bg-cover p-[45px] rounded-2xl relative h-fit w-full" data-aos="fade-right" data-aos-duration="600">
+            <div class="bg-[url('../img/oferta-2.jpg')] bg-no-repeat bg-cover p-[45px] rounded-2xl relative h-fit w-full">
                 <div class="bg-black-500/60 w-full h-full absolute top-0 left-0 rounded-2xl"></div>
                 <div class="relative z-10">
                     <img src="../img/oferta-2.png" class="m-auto mb-[15px]" alt="ic">
@@ -325,7 +237,132 @@
                     </button>
                 </div>
             </div>
-            <div class="bg-[url('../img/oferta-3.jpg')] bg-no-repeat bg-cover p-[45px] rounded-2xl relative h-fit w-full" data-aos="fade-right" data-aos-duration="900">
+        </div> -->
+
+        <div class="flex flex-col gap-5 md:flex-row">
+            <div class="bg-[url('../img/oferta-1.jpg')] bg-no-repeat bg-cover p-[45px] rounded-2xl relative h-fit w-full">
+                <div class="bg-black-500/60 w-full h-full absolute top-0 left-0 rounded-2xl"></div>
+                <div class="relative z-10">
+                    <img src="../img/oferta-1.png" class="m-auto mb-[15px]" alt="ic">
+                    <h2 class="font-semibold text-white text-[17px] leading-[20px] text-center mb-[35px]">
+                        Projekty w branży elektroenergetycznej
+                    </h2>
+                    <div class="ofertaBody h-[135px] overflow-hidden transition-all duration-300">
+                        <p class="text-white text-[15px] leading-[26px] mb-[10px]">
+                            W branży elektroenergetycznej posiadamy doświadczenie w projektowaniu :
+                        </p>
+                        <ul>
+                            <li class="flex">
+                                <div class="min-w-[5px] h-[5px] mt-3 bg-white rounded-full mr-[15px]"></div>
+                                <p class="text-white text-[15px] ">
+                                    projekty przyłączy elektroenergetycznych nN i SN
+                                </p>
+                            </li>
+                            <li class="flex">
+                                <div class="min-w-[5px] h-[5px] mt-3 bg-white rounded-full mr-[15px]"></div>
+                                <p class="text-white text-[15px] ">
+                                    projekty sieci nN i SN
+                                </p>
+                            </li>
+                            <li class="flex">
+                                <div class="min-w-[5px] h-[5px] mt-3 bg-white rounded-full mr-[15px]"></div>
+                                <p class="text-white text-[15px] ">
+                                    projekty stacji transformatorowych
+                                </p>
+                            </li>
+                            <li class="flex">
+                                <div class="min-w-[5px] h-[5px] mt-3 bg-white rounded-full mr-[15px]"></div>
+                                <p class="text-white text-[15px] ">
+                                    projekty usunięcia kolizji z istniejącą infrastrukturą
+                                </p>
+                            </li>
+                            <li class="flex">
+                                <div class="min-w-[5px] h-[5px] mt-3 bg-white rounded-full mr-[15px]"></div>
+                                <p class="text-white text-[15px] ">
+                                    projekty przyłączy tymczasowych (place budowy)
+                                </p>
+                            </li>
+                            <li class="flex">
+                                <div class="min-w-[5px] h-[5px] mt-3 bg-white rounded-full mr-[15px]"></div>
+                                <p class="text-white text-[15px] ">
+                                    projekty oświetleń ulic i terenów miejskich
+                                </p>
+                            </li>
+                            <li class="flex">
+                                <div class="min-w-[5px] h-[5px] mt-3 bg-white rounded-full mr-[15px]"></div>
+                                <p class="text-white text-[15px] ">
+                                    projekty instalacji elektrycznych i teletechnicznych
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" class="oferta w-full max-w-[225px] bg-blue-500 rounded-[10px] p-5 m-auto flex items-center mt-10 justify-center text-white text-base font-semibold leading-5">
+                        Czytaj więcej
+                    </button>
+                </div>
+            </div>
+            <div class="bg-[url('../img/oferta-2.jpg')] bg-no-repeat bg-cover p-[45px] rounded-2xl relative h-fit w-full">
+                <div class="bg-black-500/60 w-full h-full absolute top-0 left-0 rounded-2xl"></div>
+                <div class="relative z-10">
+                    <img src="../img/oferta-2.png" class="m-auto mb-[15px]" alt="ic">
+                    <h2 class="font-semibold text-white text-[17px] leading-[20px] text-center mb-[35px]">
+                        Fotowoltaika
+                    </h2>
+                    <div class="ofertaBody h-[135px] overflow-hidden transition-all duration-300">
+                        <p class="text-white text-[15px] leading-[26px] mb-[10px]">
+                            Specjalizujemy się w projektowaniu oraz przygotowaniu niezbędnej dokumentacji technicznej do budowy farm fotowoltaicznych. Zespół naszych ekspertów wspiera i koordynuje wszystkie etapy procesu. W ramach usługi świadczymy m.in.:
+                        </p>
+                        <ul>
+                            <li class="flex">
+                                <div class="min-w-[5px] h-[5px] mt-3 bg-white rounded-full mr-[15px]"></div>
+                                <p class="text-white text-[15px] ">
+                                    Weryfikacja prawno-techniczna gruntu
+                                </p>
+                            </li>
+                            <li class="flex">
+                                <div class="min-w-[5px] h-[5px] mt-3 bg-white rounded-full mr-[15px]"></div>
+                                <p class="text-white text-[15px] ">
+                                    Przygotowanie projektu budowy farmy fotowoltaicznej
+                                </p>
+                            </li>
+                            <li class="flex">
+                                <div class="min-w-[5px] h-[5px] mt-3 bg-white rounded-full mr-[15px]"></div>
+                                <p class="text-white text-[15px] ">
+                                    Przygotowanie umowy dzierżawy gruntów
+                                </p>
+                            </li>
+                            <li class="flex">
+                                <div class="min-w-[5px] h-[5px] mt-3 bg-white rounded-full mr-[15px]"></div>
+                                <p class="text-white text-[15px] ">
+                                    Uzyskanie decyzji środowiskowych.
+                                </p>
+                            </li>
+                            <li class="flex">
+                                <div class="min-w-[5px] h-[5px] mt-3 bg-white rounded-full mr-[15px]"></div>
+                                <p class="text-white text-[15px] ">
+                                    Uzyskanie warunków zabudowy
+                                </p>
+                            </li>
+                            <li class="flex">
+                                <div class="min-w-[5px] h-[5px] mt-3 bg-white rounded-full mr-[15px]"></div>
+                                <p class="text-white text-[15px] ">
+                                    Przygotowanie map do celów projektowych
+                                </p>
+                            </li>
+                            <li class="flex">
+                                <div class="min-w-[5px] h-[5px] mt-3 bg-white rounded-full mr-[15px]"></div>
+                                <p class="text-white text-[15px] ">
+                                    Uzyskanie pozwolenia na budowę
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" class="oferta w-full max-w-[225px] bg-blue-500 rounded-[10px] p-5 m-auto flex items-center mt-10 justify-center text-white text-base font-semibold leading-5">
+                        Czytaj więcej
+                    </button>
+                </div>
+            </div>
+            <div class="bg-[url('../img/oferta-3.jpg')] bg-no-repeat bg-cover p-[45px] rounded-2xl relative h-fit w-full">
                 <div class="bg-black-500/60 w-full h-full absolute top-0 left-0 rounded-2xl"></div>
                 <div class="relative z-10">
                     <img src="../img/oferta-3.png" class="m-auto mb-[15px]" alt="ic">
@@ -346,18 +383,19 @@
                 </div>
             </div>
         </div>
+        
     </div>
 </section>
 
-<section id="realizacje" class="realize bg-[url('../img/firma-bgd.jpg')] bg-no-repeat bg-cover relative pt-[60px] pb-[30px] md:pt-[120px]">
+<section class="realize bg-[url('../img/firma-bgd.jpg')] bg-no-repeat bg-cover relative pt-[60px] pb-[30px] md:pt-[120px]">
     <div class="bg-white/85 w-full h-full absolute top-0 left-0"></div>
     <div class="container relative z-10">
-        <h2 class="mb-[30px] md:mb-[80px] font-semibold text-blue-600 text-center text-xl leading-[26px] md:text-4xl md:leading-7" data-aos="fade-down">
+        <h2 class="mb-[30px] md:mb-[80px] font-semibold text-blue-600 text-center text-xl leading-[26px] md:text-4xl md:leading-7">
             Realizacje
         </h2>
         <div class="mb-[40px] lg:flex lg:items-center lg:gap-[50px] lg:justify-between">
-            <img src="../img/relize-1.jpg" class="flex m-auto mb-[30px] lg:mb-0" alt="ph" data-aos="fade-right">
-            <div data-aos="fade-left">
+            <img src="../img/relize-1.jpg" class="flex m-auto mb-[30px] lg:mb-0" alt="ph">
+            <div>
                 <p class="font-medium text-black-500 text-[15px] leading-[18px] mb-5 md:text-base md:leading-[19px]">
                     Nasza firma projektowa z pewnością podejmuje się realizacji skomplikowanych i ambitnych projektów. Posiadamy bogate doświadczenie, wysoko wykwalifikowany zespół i innowacyjne podejście, co pozwala nam skutecznie radzić sobie z wszelkimi wyzwaniami. Nie boimy się trudności – widzimy w nich szansę na rozwój i doskonalenie. Przykładem takich realizacji jest:
                 </p>
@@ -370,8 +408,8 @@
             </div>
         </div>
         <div class="mb-[40px] md:mb-[80px] lg:flex lg:items-center lg:gap-[50px] lg:justify-between lg:flex-row-reverse">
-            <img src="../img/relize-2.jpg" class="flex m-auto mb-[30px] lg:mb-0" alt="ph" data-aos="fade-left">
-            <div data-aos="fade-right">
+            <img src="../img/relize-2.jpg" class="flex m-auto mb-[30px] lg:mb-0" alt="ph">
+            <div>
                 <p class="font-medium text-black-500 text-[15px] leading-[18px] mb-5 md:text-base md:leading-[19px]">
                     Doposażenie technice elektrowni fotowoltaicznej o mocy 50 MW "Tokmak Solar Energy" Sp. z oo z siedzibą przy ul. Gogol, 201a, g. Tokmak, obwód zaporoski.
                 </p>
@@ -380,11 +418,11 @@
                 </p>
             </div>
         </div>
-        <div id="ref" class="md:flex md:items-center md:gap-5 md:justify-center pt-[30px]">
-            <button type="button" class="p-[12px] w-full bg-blue-500 rounded-[10px] font-semibold text-white text-[15px] leading-[18px] mb-5 md:mb-0 md:text-base md:p-5 md:max-w-[517px]" data-aos="fade-right">
+        <div class="md:flex md:items-center md:gap-5 md:justify-center">
+            <button type="button" class="p-[12px] w-full bg-blue-500 rounded-[10px] font-semibold text-white text-[15px] leading-[18px] mb-5 md:mb-0 md:text-base md:p-5 md:max-w-[517px]">
                 Zobacz listę projektów <br class="md:hidden">sieciowych  EnPro Group 
             </button>
-            <button type="button" class="p-[12px] w-full bg-blue-500 rounded-[10px] font-semibold text-white text-[15px] leading-[18px] md:text-base md:p-5 md:max-w-[517px]" data-aos="fade-left">
+            <button type="button" class="p-[12px] w-full bg-blue-500 rounded-[10px] font-semibold text-white text-[15px] leading-[18px] md:text-base md:p-5 md:max-w-[517px]">
                 Zobacz listę projektów <br class="md:hidden">wnętrzowych EnPro Group 
             </button>
         </div>
@@ -392,20 +430,20 @@
     
 </section>
 
-<section id="contact" class="contact pt-[60px] pb-[30px] md:py-[120px]" >
+<section class="contact pt-[60px] pb-[30px] md:py-[120px]">
     <div class="container">
-        <h2 class="mb-[30px] md:mb-[80px] font-semibold text-blue-600 text-center text-xl leading-[26px] md:text-4xl md:leading-7" data-aos="fade-down">
+        <h2 class="mb-[30px] md:mb-[80px] font-semibold text-blue-600 text-center text-xl leading-[26px] md:text-4xl md:leading-7">
             Kontact
         </h2>
         <div class="w-full lg:flex items-center gap-[25px] lg:justify-center">
-            <div class="md:flex md:items-center gap-[25px] md:mb-[30px] lg:mb-0 " >
-                <img src="../img/contact-ph-1.jpg" class="mb-[30px] flex m-auto md:mb-0" alt="ph" data-aos="fade-right">
-                <div class="mb-[30px] md:mb-0 lg:max-w-[250px]" data-aos="fade-right">
+            <div class="md:flex md:items-center gap-[25px] md:mb-[30px] lg:mb-0 ">
+                <img src="../img/contact-ph-1.jpg" class="mb-[30px] flex m-auto md:mb-0" alt="ph">
+                <div class="mb-[30px] md:mb-0 lg:max-w-[250px]">
                     <h3 class="font-semibold text-black-500 text-[17px] leading-[26px] mb-[5px]">
                         Biuro:
                     </h3>
                     <p class="text-[15px] text-black-500 leading-[26px] mb-[15px]">
-                        ul. Chłodna nr 51, Warszawa, kod 00-867, kraj POLSKA
+                        ul. Chłodna  nr 51, Warszawa, kod 00-867, kraj POLSKA
                     </p>
                     <p class="text-[15px] text-black-500 leading-[26px] mb-[15px]">
                         NIP: <span class="font-semibold">5213983986</span>
@@ -422,7 +460,7 @@
                     </a>
                 </div>
             </div>
-            <form action="POST" class="py-[30px] px-5 bg-[#ECF7FF] rounded-[15px] md:p-10" data-aos="fade-left">
+            <form action="POST" class="py-[30px] px-5 bg-[#ECF7FF] rounded-[15px] md:p-10">
                 <div class="md:flex md:items-center md:w-full">
                     <label for="inp1" class="text-[15px] text-black-500 md:text-base cursor-pointer block mb-[15px] md:mb-0 md:mr-5 w-full">Imię i nazwisko*
                         <input type="text" id="inp1" placeholder="Wprowadź imię i nazwisko..." required class="w-full rounded-[10px] border border-[#D9D9D9] p-[17px] text-[13px] text-black-500 outline-none mt-[5px]">
@@ -443,67 +481,4 @@
     </div>
 </section>
 
-<footer class="footer pt-10 pb-5 bg-blue-600 md:pt-[80px]">
-	<div class="container">
-        <div class="mb-10 lg:flex lg:justify-between">
-            <div class="flex items-center justify-center relative mb-[60px] lg:mb-0 lg:justify-start">
-                <img src="../../img/icon/footer-logo.svg" alt="ic">
-                <a href="#head" class="bg-white w-10 h-10 rounded-full flex items-center justify-center absolute right-0 lg:hidden">
-                    <img src="../../img//icon/arrow-top.svg" alt="ic">
-                </a>
-            </div>
-            <div class="flex flex-col justify-center items-center lg:items-start">
-                <h2 class="font-semibold text-white text-[20px] leading-[25px] mb-[30px] lg:mb-5">
-                    Mapa strony
-                </h2>
-                <ul class="lg:flex lg:gap-[25px]">
-                    <li>
-                        <a href="#firma" class="hover_link_white relative mb-5 lg:mb-0 text-white text-base text-center lg:whitespace-nowrap">
-                            O firmie
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#nash" class="hover_link_white relative mb-5 lg:mb-0 text-white text-base text-center lg:whitespace-nowrap">
-                            Nasz Zespół
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#oferta" class="hover_link_white relative mb-5 lg:mb-0 text-white text-base text-center lg:whitespace-nowrap">
-                            Oferta
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#realizacje" class="hover_link_white relative mb-5 lg:mb-0 text-white text-base text-center lg:whitespace-nowrap">
-                            Realizacje
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#ref" class="hover_link_white relative mb-5 lg:mb-0 text-white text-base text-center lg:whitespace-nowrap">
-                            Referencje
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="hover_link_white relative text-white text-base text-center lg:whitespace-nowrap">
-                            Kontact
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <a href="#head" class="hidden bg-white min-w-10 w-10 h-10 rounded-full lg:flex items-center justify-center">
-                <img src="../../img//icon/arrow-top.svg" alt="ic">
-            </a>
-        </div>
-        <p class="text-[11px] leading-[13px] text-[#C7E5F9] text-center">
-            © 2024 Copyright - EnPro Group. All rights reserved.
-        </p>
-    </div>
-</footer>
-
-<script src="./js/air-datepicker.js"></script>
-<!-- <script src="./../../files/swiper/swiper.min.js"></script> -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="./js/index.js"></script>
-</body>
-
-</html>
+@@include('blocks/footer.html')
