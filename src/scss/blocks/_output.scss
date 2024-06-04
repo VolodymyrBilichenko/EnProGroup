@@ -677,6 +677,10 @@ video {
   left: 0px;
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -745,6 +749,10 @@ video {
   margin-bottom: 5px;
 }
 
+.mb-\[60px\] {
+  margin-bottom: 60px;
+}
+
 .mb-\[70px\] {
   margin-bottom: 70px;
 }
@@ -783,6 +791,14 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
 .h-\[100\%\] {
   height: 100%;
 }
@@ -795,6 +811,10 @@ video {
   height: 5px;
 }
 
+.h-\[73px\] {
+  height: 73px;
+}
+
 .h-fit {
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -805,12 +825,12 @@ video {
   height: 100%;
 }
 
-.h-\[73px\] {
-  height: 73px;
-}
-
 .min-h-screen {
   min-height: 100vh;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .w-full {
@@ -819,6 +839,10 @@ video {
 
 .min-w-\[5px\] {
   min-width: 5px;
+}
+
+.min-w-10 {
+  min-width: 2.5rem;
 }
 
 .max-w-\[110px\] {
@@ -943,6 +967,11 @@ video {
   background-color: rgb(16 81 123 / var(--tw-bg-opacity));
 }
 
+.bg-blue-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 55 97 / var(--tw-bg-opacity));
+}
+
 .bg-blue-600\/45 {
   background-color: rgb(2 55 97 / 0.45);
 }
@@ -1008,16 +1037,16 @@ video {
   padding: 17px;
 }
 
+.p-\[22px\] {
+  padding: 22px;
+}
+
 .p-\[25px\] {
   padding: 25px;
 }
 
 .p-\[45px\] {
   padding: 45px;
-}
-
-.p-\[22px\] {
-  padding: 22px;
 }
 
 .px-4 {
@@ -1055,6 +1084,10 @@ video {
   padding-bottom: 60px;
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
 .pb-\[180px\] {
   padding-bottom: 180px;
 }
@@ -1069,6 +1102,10 @@ video {
 
 .pb-\[60px\] {
   padding-bottom: 60px;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .pt-\[250px\] {
@@ -1091,6 +1128,10 @@ video {
   font-size: 100px;
 }
 
+.text-\[11px\] {
+  font-size: 11px;
+}
+
 .text-\[13px\] {
   font-size: 13px;
 }
@@ -1101,6 +1142,10 @@ video {
 
 .text-\[17px\] {
   font-size: 17px;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
 }
 
 .text-\[40px\] {
@@ -1154,6 +1199,10 @@ video {
   line-height: 122px;
 }
 
+.leading-\[13px\] {
+  line-height: 13px;
+}
+
 .leading-\[18px\] {
   line-height: 18px;
 }
@@ -1162,8 +1211,17 @@ video {
   line-height: 20px;
 }
 
+.leading-\[25px\] {
+  line-height: 25px;
+}
+
 .leading-\[26px\] {
   line-height: 26px;
+}
+
+.text-\[\#C7E5F9\] {
+  --tw-text-opacity: 1;
+  color: rgb(199 229 249 / var(--tw-text-opacity));
 }
 
 .text-black-500 {
@@ -1264,6 +1322,10 @@ video {
     margin-bottom: 1.25rem;
   }
 
+  .md\:mb-\[30px\] {
+    margin-bottom: 30px;
+  }
+
   .md\:mb-\[50px\] {
     margin-bottom: 50px;
   }
@@ -1286,10 +1348,6 @@ video {
 
   .md\:mt-\[25px\] {
     margin-top: 25px;
-  }
-
-  .md\:mb-\[30px\] {
-    margin-bottom: 30px;
   }
 
   .md\:flex {
@@ -1359,16 +1417,16 @@ video {
     background-position: center;
   }
 
+  .md\:p-10 {
+    padding: 2.5rem;
+  }
+
   .md\:p-5 {
     padding: 1.25rem;
   }
 
   .md\:p-\[28px\] {
     padding: 28px;
-  }
-
-  .md\:p-10 {
-    padding: 2.5rem;
   }
 
   .md\:px-6 {
@@ -1463,6 +1521,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:static {
+    position: static;
+  }
+
   .lg\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1471,10 +1533,18 @@ video {
     margin-bottom: 45px;
   }
 
+  .lg\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
+
   .lg\:flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
   }
 
   .lg\:w-full {
@@ -1499,10 +1569,22 @@ video {
             flex-direction: row-reverse;
   }
 
+  .lg\:items-start {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
   .lg\:items-center {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  .lg\:justify-start {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 
   .lg\:justify-center {
@@ -1519,6 +1601,22 @@ video {
 
   .lg\:gap-\[50px\] {
     gap: 50px;
+  }
+
+  .lg\:gap-\[25px\] {
+    gap: 25px;
+  }
+
+  .lg\:gap-5 {
+    gap: 1.25rem;
+  }
+
+  .lg\:whitespace-nowrap {
+    white-space: nowrap;
+  }
+
+  .lg\:text-start {
+    text-align: start;
   }
 
   .lg\:text-\[300px\] {
