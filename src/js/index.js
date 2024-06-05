@@ -46,3 +46,19 @@ document.querySelectorAll('.smooth-scroll').forEach(anchor => {
         });
     });
 });
+
+
+// open nav menu mob (burger)
+
+function openNav() {
+    document.getElementById("sideBar").style.width = "100%";
+    document.getElementById("sideNav").style.width = "80%";
+    document.getElementById("sideNav").style.marginRight = "0";
+}
+  
+  /*Close navigation*/
+function exitNav() {
+    document.getElementById("sideBar").style.width = "0";
+    document.getElementById("sideNav").style.width = "0";
+    document.getElementById("sideNav").style.marginRight = "-100px";
+}

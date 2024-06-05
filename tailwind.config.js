@@ -25,7 +25,7 @@ module.exports = {
           'md': 'none',
           'lg': 'none',
           'xl': 'none',
-          '2xl': '1560px',
+          '2xl': '1280px',
         },
         maxWidth: {
           'none': 'none',
