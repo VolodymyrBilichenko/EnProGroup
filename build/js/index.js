@@ -6,15 +6,13 @@ AOS.init({
 
 // open Oferta
 
-const OfertaBtn = document.querySelectorAll('.oferta');
-const OfertaBody = document.querySelectorAll('.ofertaBody');
+const OfertaBtn = document.querySelectorAll('.ofertaBtn');
+const OfertaBody = document.querySelector('.ofertaBody');
 
 OfertaBtn.forEach(item => {
     item.addEventListener('click', () => {
-        OfertaBody.forEach(item => {
-            item.classList.toggle('h-[100%]')
-        })
-    })
+        item.closest('.ofertaCard').querySelector('.ofertaBody').classList.toggle('!max-h-[1000px]')
+    } )
 })
 
 
