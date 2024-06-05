@@ -13,7 +13,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="../css/main.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 	<!-- favicon -->
@@ -21,64 +21,66 @@
 
 </head>
 
-<body class="flex flex-col min-h-screen relative">
+<body class="flex flex-col min-h-screen relative" id="head">
 
 	<header class="mt-[5px] absolute top-[5px] w-full z-50">
 		<div class="container">
 			<div class="w-full flex items-center justify-between bg-white/95 py-[10px] px-4 rounded-[10px] md:py-[11px] md:px-[50px] md:rounded-[15px]">
 				<div class="w-full max-w-[95px] bg-blue-500 px-[13px] py-[11px] flex justify-center items-center rounded-[10px] md:max-w-[150px] md:py-[17px] md:px-[21px] md:rounded-[15px]">
-					<img src="../../img/icon/Logo.svg" alt="logo ic">
+					<img src="../img/icon/Logo.svg" alt="logo ic">
 				</div>
 				<ul class="hidden md:flex items-center gap-5">
 					<li>
-						<a href="#" class="text-black-500 text-base">
-							O firmie					
+						<a href="#firma" class="smooth-scroll hover_link text-black-500 text-base hover:text-blue-500 relative">
+							About company					
 						</a>
 					</li>
 					<li>
-						<a href="#" class="text-black-500 text-base">
-							Nasz Zespół
+						<a href="#nash" class="smooth-scroll hover_link relative text-black-500 text-base hover:text-blue-500 transition-all">
+							Our team
 						</a>
 					</li>
 					<li>
-						<a href="#" class="text-black-500 text-base">
-							Oferta
+						<a href="#oferta" class="smooth-scroll hover_link relative text-black-500 text-base hover:text-blue-500 transition-all">
+							Offer
 						</a>
 					</li>
 					<li>
-						<a href="#" class="text-black-500 text-base">
-							Realizacje
+						<a href="#realizacje" class="smooth-scroll hover_link relative text-black-500 text-base hover:text-blue-500 transition-all">
+							Projects
 						</a>
 					</li>
 					<li>
-						<a href="#" class="text-black-500 text-base">
-							Referencje
+						<a href="#ref" class="smooth-scroll hover_link relative text-black-500 text-base hover:text-blue-500 transition-all">
+							Reference
 						</a>
 					</li>
 					<li>
-						<a href="#" class="text-black-500 text-base">
-							Kontact
+						<a href="#contact" class="smooth-scroll hover_link relative text-black-500 text-base hover:text-blue-500 transition-all">
+							Contact
 						</a>
 					</li>
 				</ul>
-				<a href="tel:+48696771976" class="hidden lg:flex items-center gap-[5px] text-black-500 text-base">
-					<img src="../../img/tel-ic.svg" alt="tel ic">
+				<a href="tel:+48696771976" class="hover_link relative hidden lg:flex items-center gap-[5px] text-black-500 text-base hover:text-blue-500 transition-all">
+					<img src="../img/tel-ic.svg" alt="tel ic">
 					+48 696 771 976
 				</a>
 				<div class="relative hidden lg:block">
-					<div class="flex items-center gap-[5px]">
-						<p class="text-black-500 text-base">
-							EN
-						</p>
-						<img src="../../img/icon/arrow-down.svg" alt="arrow ic">
-					</div>
-					<div class="p-5 rounded-[10px] bg-white/95 absolute top-[25px] left-[50%] translate-x-[-50%]">
-						<a href="../" class="text-black-500 text-base">PL</a>
+					<div class="dropdown inline-block relative">
+						<button class="flex items-center gap-[5px]">
+						<span class="mr-1 text-black-500 text-base relative">EN</span>
+						<svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+						</button>
+						<ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+						<li class="">
+							<a href="../" class="hover_link text-black-500 text-base hover:text-blue-500 transition-all relative">PL</a>
+						</li>
+						</ul>
 					</div>
 				</div>
 
 				<button type="button" class="lg:hidden">
-					<img src="../../img/icon/burger.svg" class="min-w-[25px]" alt="burger ic">
+					<img src="../img/icon/burger.svg" class="min-w-[25px]" alt="burger ic">
 				</button>
 			</div>
 		</div>
