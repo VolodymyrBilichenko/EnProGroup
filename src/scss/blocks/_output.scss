@@ -647,9 +647,9 @@ video {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1560px) {
   .container {
-    max-width: 1280px;
+    max-width: 1560px;
   }
 }
 
@@ -955,10 +955,6 @@ video {
   margin-top: 5px;
 }
 
-.mt-\[15px\] {
-  margin-top: 15px;
-}
-
 .block {
   display: block;
 }
@@ -1015,10 +1011,6 @@ video {
   height: 100%;
 }
 
-.h-\[200px\] {
-  height: 200px;
-}
-
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1065,10 +1057,6 @@ video {
 
 .max-w-\[95px\] {
   max-width: 95px;
-}
-
-.max-w-\[305px\] {
-  max-width: 305px;
 }
 
 .translate-x-\[-50\%\] {
@@ -1244,16 +1232,6 @@ video {
 
 .fill-current {
   fill: currentColor;
-}
-
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .p-5 {
