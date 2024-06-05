@@ -9,3 +9,27 @@
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+
+.swiper {
+    padding-bottom: 40px !important;
+}
+
+.swiper-slide {
+    width: 100%;
+    max-width: 305px;
+    border-radius: 15px !important;
+}
+
+.swiper-pagination{
+    bottom: 0px !important;
+}
+
+.swiper-pagination-bullet{
+    background: #C7E5F9 !important;
+}
+
+.swiper-pagination-bullet-active{
+    background: #10517B !important;
+    width: 8px !important;
+    height: 8px !important;
+}
