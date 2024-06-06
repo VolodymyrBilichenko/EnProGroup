@@ -24,7 +24,7 @@
 
 	// Отправка на почту
 
-	$ok = mail('volodymyr.bilichenko@gmail.com', 'Theme', $message_all); // mail('На какую почту отправлять', 'Тема сообщения', 'Сообщение'); 
+	$ok = mail('info@enpro.group', 'Theme', $message_all); // mail('На какую почту отправлять', 'Тема сообщения', 'Сообщение'); 
 
 	// Отправка на почту
 

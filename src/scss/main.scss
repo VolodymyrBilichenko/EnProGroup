@@ -6,6 +6,10 @@
     font-family: 'Montserrat';
 }
 
+section {
+    overflow-x: hidden;
+}
+
 .dropdown:hover .dropdown-menu {
     display: block;
 }
@@ -25,11 +29,11 @@
 }
 
 .swiper-pagination-bullet{
-    background: #C7E5F9 !important;
+    background: #10517B !important;
 }
 
 .swiper-pagination-bullet-active{
-    background: #10517B !important;
+    background: #023761 !important;
     width: 8px !important;
     height: 8px !important;
 }
