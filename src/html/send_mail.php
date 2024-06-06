@@ -1,29 +1,44 @@
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Отримуємо дані з форми
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $message = htmlspecialchars($_POST['message']);
+<?php 
+	
+	// Переменные
 
-    // Електронна адреса одержувача (ваша)
-    $to = "volodymyr.bilichenko@gmail.com";
+	$name = $_POST['name'];  // $переменная =  $_POST[' name которое указали в форме ']
+	$email = $_POST['email']; // $переменная =  $_POST[' name которое указали в форме ']
+	$textarea = $_POST['textarea']; // $переменная =  $_POST[' name которое указали в форме ']
 
-    // Тема листа
-    $subject = "Нова форма з вашого сайту";
+	// Переменные
+	
+	
 
-    // Повідомлення
-    $body = "Ім'я: $name\nEmail: $email\nПовідомлення:\n$message";
+	// Сообщение для почты
 
-    // Заголовки
-    $headers = "From: $email";
+	$message_all = 					// Переменная для сообщения которое будет приходить на почту
+	"Сообщение из сайта EnProGroup: " . 
+	"\n\nИмя: " . $name.
+	"\nТелефон: " . $email.
+	"\nmessage: " . $textarea;
 
-    // Відправка листа
-    if (mail($to, $subject, $body, $headers)) {
-        echo "Повідомлення успішно відправлено.";
-    } else {
-        echo "Помилка при відправці повідомлення.";
-    }
-} else {
-    echo "Некоректний метод запиту.";
-}
-?>
+	// Сообщение для почты
+
+
+
+	// Отправка на почту
+
+	$ok = mail('volodymyr.bilichenko@gmail.com', 'Theme', $message_all); // mail('На какую почту отправлять', 'Тема сообщения', 'Сообщение'); 
+
+	// Отправка на почту
+
+
+
+	// Проверка отправки на почту
+
+	if ($ok){
+		echo 'Сообщение отправлено!';
+		sleep(2); // Задержка 2 секунды
+		header('Location: ' . $_SERVER['HTTP_REFERER']); // Перенаправление на ту страницу, с которой было отправлена форма
+	}else{
+		echo 'Фэйл(((';
+	}
+
+	// Проверка отправки на почту
+ ?>

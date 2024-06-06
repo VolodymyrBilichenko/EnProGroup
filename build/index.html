@@ -514,7 +514,7 @@
         <h2 class="mb-[30px] md:mb-[80px] font-semibold text-blue-600 text-center text-xl leading-[26px] md:text-4xl md:leading-7" data-aos="fade-down">
             Kontact
         </h2>
-        <div class="w-full lg:flex items-center gap-[25px] lg:justify-center">
+        <div class="w-full lg:flex items-center gap-[25px] lg:justify-center relative">
             <div class="md:flex md:items-center gap-[25px] md:mb-[30px] lg:mb-0 " >
                 <img src="./img/contact-ph-1.jpg" class="mb-[30px] flex m-auto md:mb-0" alt="ph" data-aos="fade-right">
                 <div class="mb-[30px] md:mb-0 lg:max-w-[250px]" data-aos="fade-right">
@@ -539,7 +539,7 @@
                     </a>
                 </div>
             </div>
-            <form action="send_mail.php" method="POST" class="py-[30px] px-5 bg-[#ECF7FF] rounded-[15px] md:p-10" data-aos="fade-left">
+            <form method="post" action="./send_mail.php" class="py-[30px] px-5 bg-[#ECF7FF] rounded-[15px] md:p-10" data-aos="fade-left">
                 <div class="md:flex md:items-center md:w-full">
                     <label for="inp1" class="text-[15px] text-black-500 md:text-base cursor-pointer block mb-[15px] md:mb-0 md:mr-5 w-full">
                         Imię i nazwisko*
@@ -558,6 +558,13 @@
                     <span class="relative z-10">Wysłać wiadomość</span>
                 </button>
             </form>
+            <div id="successMessage" class="hidden success absolute bottom-[20px] left-[50%] transform-[-50%] translate-x-[-50%] items-center justify-center gap-5 bg-white p-10 rounded-2xl w-full max-w-[700px] shadow-lg">
+                <img src="./img/icon/galka.svg" alt="ic success">
+                <p class="font-medium text-black-500 text-base">
+                    Twoja wiadomość została wysłana i wkrótce zostanie przejrzana.
+                </p>
+            </div>
+
         </div>
     </div>
 </section>

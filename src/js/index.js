@@ -60,3 +60,7 @@ function exitNav() {
     document.getElementById("sideNav").style.width = "0";
     document.getElementById("sideNav").style.marginRight = "-100px";
 }
+
+
+// mail 
+
